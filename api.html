@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>docDigitales API | Facturación en Línea</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta name="description" content="Con docDigitales API puedes integrar la función de facturación electrónica a cualquier sistema en poco tiempo.">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22599809-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-22599809-3');
+  </script>
+
+
+</head>
+
+<body>
+
+  <div class="estilo_texto">
+
+    <section class="columns" id="api_primera_seccion_fondo">
+      <div class="column is-10 is-offset-1">
+
+        <!-- PRE NAVBAR -->
+        <div class="columns pre_navbar is-vcentered">
+          <div class="column is-offset-7 is-paddingless has-text-right">
+            <span class="pre_navbar_item navbar_desktop" data-tippy=" <b>Horario de Atención </b><br>  Lunes a Viernes <br> 9:30am a 7:00pm TC" data-tippy-arrow="true"><i class="fas fa-phone"></i>01800 788 5783</span>
+          </div>
+          <div class="column is-1 is-paddingless has-text-centered">
+            <a href="soporte" class="contacto_hover">
+              <p class="pre_navbar_item navbar_desktop">Soporte</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="columns" id="menu_api">
+          <div class="column">
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                  <img src="img/logo_docdigitales_blanco.png" alt="logo docDigitales blanco" id="imagen_logo">
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span class="span_blanco" aria-hidden="true"></span>
+                  <span class="span_blanco" aria-hidden="true"></span>
+                  <span class="span_blanco" aria-hidden="true"></span>
+                </a>
+
+              </div>
+
+              <div id="navbarBasicExample" class="navbar-menu">
+
+                <div class="navbar-end">
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link item_menu_blanco hover_menu_mobile item_menu_blanco_hover">
+                      Cómo Funciona
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed" id="drop_funciona">
+                      <a class="navbar-item hover_menu_mobile hover_menu_mobile drop_item" href="/facturacion-en-linea">
+                        Facturación en Línea
+                      </a>
+                      <a class="navbar-item hover_menu_mobile drop_item" href="/api">
+                        API
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link item_menu_blanco hover_menu_mobile" id="como_compania">
+                      Compañía
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed" id="drop_compania">
+                      <a class="navbar-item hover_menu_mobile drop_item" href="/sobre-nosotros">
+                        Sobre Nosotros
+                      </a>
+                      <a class="navbar-item hover_menu_mobile drop_item" href="https://blog.docdigitales.com/">
+                        Blog
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <a class="navbar-item item_menu_blanco hover_menu_mobile" href="/planes">
+                    Planes
+                  </a>
+
+
+                  <div class="navbar-item has-text-right">
+                    <div class="buttons">
+                      <a class="button boton_prueba_menu" href="https://developer.docdigitales.com/usuarios/sign_up" target="_blank">
+                        <strong>Prueba Gratis API</strong>
+                      </a>
+                      <a class="button boton_iniciar_menu" href="https://developer.docdigitales.com/usuarios/sign_in" target="_blank">
+                        Iniciar Sesión API
+                      </a>
+                    </div>
+                    <hr class="navbar-divider navbar_mobile">
+                    <a class="hover_menu_mobile hover_menu_mobile navbar-item navbar_mobile"><i class="fas fa-phone"></i>01800 788 5783</a>
+                    <a class="navbar-item navbar_mobile hover_menu_mobile" href="/soporte">Contacto</a>
+                    <hr class="navbar-divider navbar_mobile">
+                    <a class="hover_menu_mobile hover_menu_mobile navbar-item navbar_mobile" href="/api">API</a>
+                    <a class="navbar-item navbar_mobile hover_menu_mobile" href="https://developer.docdigitales.com/integracion" target="_blank">Documentación</a>
+                    <a class="navbar-item navbar_mobile hover_menu_mobile" href="/soporte-api">Contacto API</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+        </div>
+        <hr id="linea_api" class="navbar_desktop">
+
+        <div class="columns navbar_desktop" id="segundo_menu">
+          <div class="column is-offset-7 has-text-right">
+            <a href="/api" class="item_menu_blanco_hover tercer_menu">API</a>
+            <a href="https://developer.docdigitales.com/integracion" target="_blank" class="tercer_menu">Documentación</a>
+            <a href="/soporte-api" class="tercer_menu">Contacto API</a>
+
+          </div>
+        </div>
+
+        <section>
+          <div class="columns" id="mobile_padding_titulo_api">
+            <div class="column is-half" id="api_titulo">
+              <div class="columns">
+                <div class="column">
+                  <img src="img/Logo-Blanco.png" alt="Logo en blanco de API" width="70%">
+                  <h1 class="title">
+                    API de Facturación en Línea
+                  </h1>
+                </div>
+              </div>
+
+              <div class="columns">
+                <div class="column">
+                  <p class="texto_contenido_blanco" id="mobile_texto_facturacion">
+                    docDigitales API es una gran herramienta para integrar la facturación electrónica a tu sistema. </p>
+                  <a class="button boton_rojo" id="margin_boton_primera" href="https://developer.docdigitales.com/usuarios/sign_up" target="_blank">¡Obtén tu demo gratis!</a><br>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div id="animacion_cuatro"></div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="api_circulos_derecha">
+      <div class="columns">
+        <div class="column is-offset-1 is-10">
+          <!-- PRINCIPALES 3 FUNCIONES -->
+          <div class="columns">
+            <div class="column api_tres_funciones">
+              <img src="img/api_soporte.jpg" alt="Soporte docDigitales">
+              <h2 class="titulo_api_rojo">Excelente Soporte</h2>
+              <p class="texto_contenido_gris">Contamos con un equipo de soporte especializado que te ayudará y resolverá todas tus dudas de integración.</p>
+            </div>
+            <div class="column api_tres_funciones">
+              <img src="img/api_entegrate.jpg" alt="integracion a API">
+              <h2 class="titulo_api_rojo">Fácil Integración</h2>
+              <p class="texto_contenido_gris">API en arquitectura Rest, con documentación clara y en distintos lenguajes de programación como C#, Java, PHP y Ruby.</p>
+            </div>
+            <div class="column api_tres_funciones">
+              <img src="img/api_mejora.jpg" alt="imagen mejora tu sistema">
+              <h2 class="titulo_api_rojo">Mejora tu sistema</h2>
+              <p class="texto_contenido_gris">Con docDigitales API puedes integrar la función de facturación electrónica a cualquier sistema en poco tiempo.</p>
+            </div>
+
+          </div>
+          <!-- DESARROLLADORES -->
+          <div class="columns">
+            <div class="column is-half" id="mobile_ideal_api">
+              <h3 class="titulo_gris_facturacion">Ideal para Desarrolladores</h3>
+              <p class="texto_contenido_gris">docDigitales API</p>
+              <hr>
+              <div class="columns">
+                <div class="column is-half">
+                  <ul class="texto_contenido_gris">
+                    <li><i class="fas fa-circle-notch"></i>Sistemas ERP</li>
+                    <li><i class="fas fa-circle-notch"></i>Sistemas Contables</li>
+                    <li><i class="fas fa-circle-notch"></i>Sistemas de Punto de Venta</li>
+                  </ul>
+                </div>
+                <div class="column is-half">
+                  <ul class="texto_contenido_gris">
+                    <li><i class="fas fa-circle-notch"></i>Sistemas Administrativos</li>
+                    <li><i class="fas fa-circle-notch"></i>Sistemas de Facturación</li>
+                    <li><i class="fas fa-circle-notch"></i>Sistemas a la Medida</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-half seccion3_landing_api">
+
+              <!-- CODE-->
+
+              <div class="columns" id="contenedor_no_display">
+                <div class="csharp_btn label_code btn_seleccionado column">C#</div>
+                <div class="java_btn label_code column">Java</div>
+                <div class="php_btn label_code column">PHP</div>
+                <div class="ruby_btn label_code column">Ruby</div>
+              </div>
+
+              <div id="contenedor_codigo" class="columns">
+                <div class="column" style="height:400px;">
+
+                  <pre class="csharp aparece_ejemplo_api">
+                          <code class="csharp aparece_ejemplo_api">
+                            # Con el json de generacion de factura...
+
+                            string factura = "{\"meta\":{\"empresa_uid\":\"asd123asd\",\"empresa_api_key\":\"123123123\",\"ambiente\":\"S\",\"objeto\":\"factura\"},\"data\":[{\"datos_fiscales\":{\"certificado_pem\":\"\",\"llave_pem\":\"\",\"llave_password\":\"DDM090629R13\"},\"cfdi\":{\"cfdi__comprobante\":{\"folio\":\"123\",\"fecha\":\"2018-03-25T12:12:12\",\"tipo_comprobante\":\"I\",\"lugar_expedicion\":\"21100\",\"forma_pago\":\"01\",\"metodo_pago\":\"PUE\",\"moneda\":\"MXN\",\"tipo_cambio\":\"1\",\"subtotal\":\"99.00\",\"total\":\"99.00\",\"cfdi__emisor\":{\"rfc\":\"DDM090629R13\",\"nombre\":\"Emisor Test\",\"regimen_fiscal\":\"601\"},\"cfdi__receptor\":{\"rfc\":\"XEXX010101000\",\"nombre\":\"Receptor Test\",\"uso_cfdi\":\"G01\"},\"cfdi__conceptos\":{\"cfdi__concepto\":[{\"clave_producto_servicio\":\"01010101\",\"clave_unidad\":\"KGM\",\"cantidad\":\"1\",\"descripcion\":\"descripcion test\",\"valor_unitario\":\"99.00\",\"importe\":\"99.00\",\"unidad\":\"unidad\",\"no_identificacion\":\"KGM123\",\"cfdi__impuestos\":{\"cfdi__traslados\":{\"cfdi__traslado\":[{\"base\":\"99.00\",\"impuesto\":\"002\",\"tipo_factor\":\"Exento\"}]}}}]}}}}]}";
+
+                            _factura = new ApiFacturacion();
+                            _lib     = new CertificadosDocDigitales();
+                            _contenidoCertificado = _lib.ExportarCertificadoPem(PATH_CERTIFICADO);
+                            _contenidoLlave       = _lib.ExportarLlavePem(PATH_LLAVE, PASSWORD_LLAVE);
+
+                            # por cada comprobante que querramos timbrar llenamos sus datos fiscales
+                            # path_certificado /vendor/certificados/certificado.cer
+                            # path_llave       /vendor/certificados/llave.pem
+                            # path_password    /vendor/certificados/password.txt
+                            # ejemplo de como obtener el contenido de los certificados https://github.com/docdigitales/api-csharp/blob/master/ApiFacturacion/CertificadosDocDigitales.cs
+
+                            var facturaDiccionario = JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(factura);
+
+                            // Establecer parametros para generacion
+                            facturaDiccionario["data"][0]["datos_fiscales"]["certificado_pem"]  = _contenidoCertificado;
+                            facturaDiccionario["data"][0]["datos_fiscales"]["llave_pem"]        = _contenidoLlave;
+                            facturaDiccionario["data"][0]["datos_fiscales"]["llave_password"]   = PASSWORD_LLAVE;
+
+                            // Enviamos la peticion de timbrado
+                            var facturaGenerada = _factura.GeneracionFactura(facturaDiccionario);
+
+                            // Donde el metodo de GeneracionFactura(facturaDiccionario) se define:
+                            public Dictionary<string, dynamic> GeneracionFactura(Dictionary<string, dynamic> peticionGeneracion) {
+                              string _uriGeneracion = "http://api.docdigitales.com/v1/facturas/generar";
+
+                              try {
+                                string response = GetPostResponse(_uriGeneracion, peticionGeneracion);
+                                return JsonConvert.DeserializeObject<Dictionary<string, dynamic>>(response);
+                              } catch(Exception e) {
+                                Console.WriteLine("{0} Excepcion.", e);
+                                return null;
+                              }
+                            }
+
+                            private string GetPostResponse(String uri, Dictionary<string, dynamic> data) {
+                              try {
+                                string jsonData = JsonConvert.SerializeObject(data);
+                                using (var client = new HttpClient()) {
+                                  client.DefaultRequestHeaders.Add("Authorization", $"Token token={EMPRESA_API_KEY}"); // El Api Key Privada de tu cuenta
+                                  client.DefaultRequestHeaders.Add("ACCEPT", "application/json");
+                                  client.DefaultRequestHeaders.Add("CONTENT_TYPE", "application/json");
+                                  client.DefaultRequestHeaders.Add("Access-Control-Allow-Origin", "*");
+                                  client.DefaultRequestHeaders.Add("Method", "POST");
+                                  var response = client.PostAsync(uri, new StringContent(jsonData, System.Text.Encoding.Default, "application/json"));
+                                  var response_string = response.Result.Content.ReadAsStringAsync();
+                                  Console.WriteLine(response_string.Result);
+                                  return response_string.Result;
+                                }
+                              } catch(Exception e) {
+                                Console.WriteLine("{0} Excepcion.", e);
+                                return null;
+                              }
+                            }
+
+                            // Respuesta
+                            {
+                              "meta":{
+                                "ambiente":"S",
+                                "objeto":"factura",
+                                "respuesta_uid":"6d56aa20fd"
+                              },
+                              "data":[
+                              {
+                                "cfdi":{
+                                  "cfdi__comprobante":{
+                                    "folio":"123",
+                                    "fecha":"2018-07-11T12:01:40",
+                                    "tipo_comprobante":"I",
+                                    "lugar_expedicion":"21100",
+                                    "forma_pago":"01",
+                                    "metodo_pago":"PUE",
+                                    "moneda":"MXN",
+                                    "tipo_cambio":"1",
+                                    "subtotal":"99.00",
+                                    "total":"99.00",
+                                    "cfdi__emisor":{
+                                      "rfc":"DDM090629R13",
+                                      "nombre":"Emisor Test",
+                                      "regimen_fiscal":"601"
+                                    },
+                                    "cfdi__receptor":{
+                                      "rfc":"XEXX010101000",
+                                      "nombre":"Receptor Test",
+                                      "uso_cfdi":"G01"
+                                    },
+                                    "cfdi__conceptos":{
+                                      "cfdi__concepto":[
+                                      {
+                                        "clave_producto_servicio":"01010101",
+                                        "clave_unidad":"KGM",
+                                        "cantidad":"1",
+                                        "descripcion":"descripcion test",
+                                        "valor_unitario":"99.00",
+                                        "importe":"99.00",
+                                        "unidad":"unidad",
+                                        "no_identificacion":"KGM123",
+                                        "cfdi__impuestos":{
+                                          "cfdi__traslados":{
+                                            "cfdi__traslado":[
+                                            {
+                                              "base":"99.00",
+                                              "impuesto":"002",
+                                              "tipo_factor":"Exento"
+                                            }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                      ]
+                                    }
+                                  }
+                                },
+                                "cfdi_respuesta":{
+                                  "timbrada":"true"
+                                },
+                                "cfdi_complemento":{
+                                  "xsi:schema_location":"http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd",
+                                  "xmlns:tfd":"http://www.sat.gob.mx/TimbreFiscalDigital",
+                                  "version":"1.1",
+                                  "uuid":"429A7DA9-EAAD-4AF5-9235-12992B3E0545",
+                                  "fecha_timbrado":"2018-07-11T14:01:42",
+                                  "sello_cfd":"jfyhUksoP27NZQMugio/LU9b9wvlSqc0MYTugpPsaFsoA6O7UnfoumETLKyKN4zXEYlQzo4RVKKhd6RAkfq/eKVl7MJZHngYJs7rwu+ZUZ0bAB+0HHp7aGU4owpFb5JDSAkUBp6bfMSRdMXc/45HX4BkVG0vVJ//prUaUEsRJ6ZsgSPm5xrgO+J+meFfrtJxKLKVl5q4hX5S/PqO6zadds9UqMygCvHO0MpHKgN1PeNPTge7BWcGpHPoaJwYJ2rQlfP9mOnw8p3Ejl0ot+tVElfOvlHE1CPdxqbz4BOqOv+ygDZY20UetO/CbDcjv1YMLzmL+w4eVwuBHj0xbwnCYg==",
+                                  "no_certificado_sat":"20001000000300022323",
+                                  "sello_sat":"CL2Ozfgn3j5rN5LGrx9a885JPveL7y/4AjoMF6I59gSC8DY7sRGMQf0P5rzx3YzDIxy20ZsTQWWkc9Ydr0eo1aPDIZSW2EYrRZ8C2bLhpRGq1E5FrC9zZ5LRyTzqPVTspD7SHHdxcwDAp3RH+jh9YIqsmbUi2goed7o0RQtRH0f+g8wSCPA8cvRVLVX16bh180gxlZvpws6V8ye5CUgQNFi7qf6e8m5S1lqnrUyoSaImobLhUMDVEvJ/DweNKEtguKIUT0HerIEHxWqj3b6tysXzW+vtogWEX/Oo7EB6F3SU/V9Ty10f3NWX9GVoOKsSgovsZp+YrZiIREMI1qnp4Q==",
+                                  "rfc_prov_certif":"IAD121214B34"
+                                }
+                              }
+                              ]
+                            }
+                          </code>
+                        </pre>
+
+                  <pre class="java">
+                          <code class="java">
+                            # Con el json de generacion de factura...
+
+                            '{"meta":{"empresa_uid":"asd123asd","empresa_api_key":"123123123","ambiente":"S","objeto":"factura"},"data":[{"datos_fiscales":{"certificado_pem":"","llave_pem":"","llave_password":""},"cfdi":{"cfdi__comprobante":{"folio":"123","fecha":"2018-03-25T12:12:12","tipo_comprobante":"I","lugar_expedicion":"21100","forma_pago":"01","metodo_pago":"PUE","moneda":"MXN","tipo_cambio":"1","subtotal":"99.00","total":"99.00","cfdi__emisor":{"rfc":"DDM090629R13","nombre":"Test","real":"601"},"cfdi__receptor":{"rfc":"XEXX010101000","nombre":"Receptor Test","uso_cfdi":"G01"},"cfdi__conceptos":{"cfdi__concepto":[{"clave_producto_servicio":"01010101","clave_unidad":"KGM","cantidad":"1","descripcion":"descripcion test","valor_unitario":"99.00","importe":"99.00","unidad":"unidad","no_identificacion":"KGM123","cfdi__impuestos":{"cfdi__traslados":{"cfdi__traslado":[{"base":"99.00","impuesto":"002","tipo_factor":"Exento"}]}}}]}}}}]}';
+
+                            private ApiFacturacion api = new ApiFacturacion();
+                            private Gson gson = new Gson();
+
+                            # por cada comprobante que querramos timbrar llenamos sus datos fiscales
+                            # path_certificado /vendor/certificados/certificado.cer
+                            # path_llave       /vendor/certificados/llave.pem
+                            # path_password    /vendor/certificados/password.txt
+                            # ejemplo de como obtener el contenido de los certificados https://github.com/docdigitales/api-java/blob/master/src/main/java/docdigitales/Certificados.java
+
+                            String certificadoPem = Certificados.exportarCertificadoPem(PATH_CERTIFICADO);
+                            String llavePem = Certificados.exportarLlavePem(PATH_LLAVE);
+                            // Transformar JSON a Mapa
+                            Map<String, Object> facturaDiccionario = JsonMap.toMap(factura);
+                            // Agregar los Datos fiscales y la fecha
+                            facturaDiccionario = JsonMap.setDatosFiscales(facturaDiccionario, certificadoPem, llavePem, "DDM090629R13");
+                            facturaDiccionario = JsonMap.setFecha(facturaDiccionario);
+                            // Generar la Factura
+                            String peticionGeneracion = gson.toJson(facturaDiccionario);
+
+                            # Enviamos peticion de timbrado
+                            String response = api.generacionFactura(peticionGeneracion);
+
+                            # Donde el metodo de generacionFactura(factura) se define:
+
+                            public String generacionFactura(String peticionGeneracion) {
+                              String uriGeneracion = "http://api.docdigitales.com/v1/facturas/generar";
+                              return getPostResponse(uriGeneracion, peticionGeneracion);
+                            }
+
+                            private String getPostResponse(String uri, String data) {
+                              try {
+                                OkHttpClient client = new OkHttpClient();
+                                RequestBody body = RequestBody.create(JSON, data);
+                                Request request = new Request.Builder().url(uri).post(body)
+                                .header("Authorization", "Token token=".concat(EMPRESA_API_KEY))
+                                .addHeader("ACCEPT", "application/json")
+                                .addHeader("CONTENT_TYPE", "application/json")
+                                .addHeader("Access-Control-Allow-Origin", "*").build();
+                                Response response = client.newCall(request).execute();      return response.body().string();
+                              } catch(Exception e) {
+                                System.out.println(e);
+                                return null;        }    # Respuesta    {    "meta":        "ambiente":"S"        "objeto":"factura",      "respuesta_uid":"6d56aa20fd"    },    "data":[    {
+                                  "cfdi":{        "cfdi__comprobante":{
+                                    "folio":"123",
+                                    "fecha":"2018-07-11T12:01:40",
+                                    "tipo_comprobante":"I",
+                                    "lugar_expedicion":"21100",
+                                    "forma_pago":"01",
+                                    "metodo_pago":"PUE",
+                                    "moneda":"MXN",
+                                    "tipo_cambio":"1",
+                                    "subtotal":"99.00",
+                                    "total":"99.00",
+                                    "cfdi__emisor":{
+                                      "rfc":"DDM090629R13",
+                                      "nombre":"Emisor Test",
+                                      "regimen_fiscal":"601"
+                                    },
+                                    "cfdi__receptor":{
+                                      "rfc":"XEXX010101000",
+                                      "nombre":"Receptor Test",
+                                      "uso_cfdi":"G01"
+                                    },
+                                    "cfdi__conceptos":{
+                                      "cfdi__concepto":[
+                                      {
+                                        "clave_producto_servicio":"01010101",
+                                        "clave_unidad":"KGM",
+                                        "cantidad":"1",
+                                        "descripcion":"descripcion test",
+                                        "valor_unitario":"99.00",
+                                        "importe":"99.00",
+                                        "unidad":"unidad",
+                                        "no_identificacion":"KGM123",
+                                        "cfdi__impuestos":{
+                                          "cfdi__traslados":{
+                                            "cfdi__traslado":[
+                                            {
+                                              "base":"99.00",
+                                              "impuesto":"002",.seccion5_img_container img
+                                              "tipo_factor":"Exento"
+                                            }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                      ]
+                                    }
+                                  }
+                                },
+                                "cfdi_respuesta":{
+                                  "timbrada":"true"
+                                },
+                                "cfdi_complemento":{
+                                  "xsi:schema_location":"http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd",
+                                  "xmlns:tfd":"http://www.sat.gob.mx/TimbreFiscalDigital",
+                                  "version":"1.1",
+                                  "uuid":"429A7DA9-EAAD-4AF5-9235-12992B3E0545",
+                                  "fecha_timbrado":"2018-07-11T14:01:42",
+                                  "sello_cfd":"jfyhUksoP27NZQMugio/LU9b9wvlSqc0MYTugpPsaFsoA6O7UnfoumETLKyKN4zXEYlQzo4RVKKhd6RAkfq/eKVl7MJZHngYJs7rwu+ZUZ0bAB+0HHp7aGU4owpFb5JDSAkUBp6bfMSRdMXc/45HX4BkVG0vVJ//prUaUEsRJ6ZsgSPm5xrgO+J+meFfrtJxKLKVl5q4hX5S/PqO6zadds9UqMygCvHO0MpHKgN1PeNPTge7BWcGpHPoaJwYJ2rQlfP9mOnw8p3Ejl0ot+tVElfOvlHE1CPdxqbz4BOqOv+ygDZY20UetO/CbDcjv1YMLzmL+w4eVwuBHj0xbwnCYg==",
+                                  "no_certificado_sat":"20001000000300022323",
+                                  "sello_sat":"CL2Ozfgn3j5rN5LGrx9a885JPveL7y/4AjoMF6I59gSC8DY7sRGMQf0P5rzx3YzDIxy20ZsTQWWkc9Ydr0eo1aPDIZSW2EYrRZ8C2bLhpRGq1E5FrC9zZ5LRyTzqPVTspD7SHHdxcwDAp3RH+jh9YIqsmbUi2goed7o0RQtRH0f+g8wSCPA8cvRVLVX16bh180gxlZvpws6V8ye5CUgQNFi7qf6e8m5S1lqnrUyoSaImobLhUMDVEvJ/DweNKEtguKIUT0HerIEHxWqj3b6tysXzW+vtogWEX/Oo7EB6F3SU/V9Ty10f3NWX9GVoOKsSgovsZp+YrZiIREMI1qnp4Q==",
+                                  "rfc_prov_certif":"IAD121214B34"
+                                }
+                              }
+                              ]
+                            }
+                          </code>
+                        </pre>
+
+                  <pre class="php">
+                          <code class="php">
+                            # Con el json de generacion de factura...
+
+                            json = '{"meta":{"empresa_uid":"asd123asd","empresa_api_key":"123123123","ambiente":"S","objeto":"factura"},"data":[{"datos_fiscales":{"certificado_pem":"","llave_pem":"","llave_password":""},"cfdi":{"cfdi__comprobante":{"folio":"123","fecha":"2018-03-25T12:12:12","tipo_comprobante":"I","lugar_expedicion":"21100","forma_pago":"01","metodo_pago":"PUE","moneda":"MXN","tipo_cambio":"1","subtotal":"99.00","total":"99.00","cfdi__emisor":{"rfc":"DDM090629R13","nombre"<  :></:>Test","regimen_fiscal":"601"},"cfdi__receptor":{"rfc":"XEXX010101000","nombre":"Receptor Test","uso_cfdi":"G01"},"cfdi__conceptos":{"cfdi__concepto":[{"clave_producto_servicio":"01010101","clave_unidad":"KGM","cantidad":"1","descripcion":"descripcion test","valor_unitario":"99.00","importe":"99.00","unidad":"unidad","no_identificacion":"KGM123","cfdi__impuestos":{"cfdi__traslados":{"cfdi__traslado":[{"base":"99.00","impuesto":"002","tipo_factor":"Exento"}]}}}]}}}}]}';
+
+                            $api  = new DocDigitales();
+                            $cert = new Certificados();
+
+                            # por cada comprobante que querramos timbrar llenamos sus datos fiscales
+                            # path_certificado /vendor/certificados/certificado.cer
+                            # path_llave       /vendor/certificados/llave.pem
+                            # path_password    /vendor/certificados/password.txt
+                            # ejemplo de como obtener el contenido de los certificados https://github.com/docdigitales/api-php/blob/master/lib/Certificados.php
+
+                            $factura = json_decode($json, true);
+                            $factura["data"][0]["datos_fiscales"]["certificado_pem"]  = $cert->contenidoCertificado("vendor/certificados/certificado.cer");
+                            $factura["data"][0]["datos_fiscales"]["llave_pem"]        = $cert->contenidoLlave("vendor/certificados/llave.pem");
+                            $factura["data"][0]["datos_fiscales"]["llave_password"]   = $cert->passwordLlave("vendor/certificados/password.txt");
+
+                            # Enviamos peticion de <timbra></timbra>do
+                            $facturaGenerada = $api->generacionFactura($factura);
+
+                            # Donde el metodo generacionFactura($factura) se define:
+                            public function generacionFactura($factura) {
+                              try {
+                                $uriGeneracion = "http://api.docdigitales.com/v1/facturas/generar";
+                                $generada = $this->getPostResponse($uriGeneracion, $factura);
+                                return $generada;
+                              } catch (Exception $e) {
+                                echo $e;
+                                return null;
+                              }
+                            }
+
+                            private function getPostResponse($uri, $data) {
+                              $client = new GuzzleHttp\Client(['base_uri' => $uri]);
+                              $options = ['headers' => [
+                              'Authorization' => "Token token=123123123",
+                              'Accept'        => 'application/json',
+                              'Content-Type'  => 'application/json',
+                              'Access-Control-Allow-Origin' => '*'
+                              ],'body' => json_encode($data)];
+
+                              $response = $client->request('POST', $uri, $options);
+                              $stream = Psr7\stream_for($response->getBody());
+                              return json_decode($stream, true);
+                            }
+
+                            # Respuesta
+                            {
+                              "meta":{
+                                "ambiente":"S",
+                                "objeto":"factura",
+                                "respuesta_uid":"6d56aa20fd"
+                              },
+                              "data":[
+                              {
+                                "cfdi":{
+                                  "cfdi__comprobante":{
+                                    "folio":"123",
+                                    "fecha":"2018-07-11T12:01:40",
+                                    "tipo_comprobante":"I",
+                                    "lugar_expedicion":"21100",
+                                    "forma_pago":"01",
+                                    "metodo_pago":"PUE",
+                                    "moneda":"MXN",
+                                    "tipo_cambio":"1",
+                                    "subtotal":"99.00",
+                                    "total":"99.00",
+                                    "cfdi__emisor":{
+                                      "nombre":"Emisor Test",
+                                      "regimen_fiscal":"601"
+                                    },
+                                    "cfdi__receptor":{
+                                      "nombre":"Receptor Test",
+                                      "uso_cfdi":"G01"
+                                    },
+                                    "cfdi__conceptos":{
+                                      "cfdi__concepto":[
+                                      {
+                                        "clave_producto_servicio":"01010101",
+                                        "clave_unidad":"KGM",
+                                        "cantidad":"1",
+                                        "descripcion":"descripcion test",
+                                        "valor_unitario":"99.00",
+                                        "importe":"99.00",
+                                        "unidad":"unidad",
+                                        "no_identificacion":"KGM123",
+                                        "cfdi__impuestos":{
+                                          "cfdi__traslados":{
+                                            "cfdi__traslado":[
+                                            {
+                                              "base":"99.00",
+                                              "impuesto":"002",
+                                              "tipo_factor":"Exento"
+                                            }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                      ]
+                                    }
+                                  }
+                                },
+                                "cfdi_respuesta":{
+                                  "timbrada":"true"
+                                },
+                                "cfdi_complemento":{
+                                  "xsi:schema_location":"http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd",
+                                  "xmlns:tfd":"http://www.sat.gob.mx/TimbreFiscalDigital",
+                                  "version":"1.1",
+                                  "uuid":"429A7DA9-EAAD-4AF5-9235-12992B3E0545",
+                                  "fecha_timbrado":"2018-07-11T14:01:42",
+                                  "sello_cfd":"jfyhUksoP27NZQMugio/LU9b9wvlSqc0MYTugpPsaFsoA6O7UnfoumETLKyKN4zXEYlQzo4RVKKhd6RAkfq/eKVl7MJZHngYJs7rwu+ZUZ0bAB+0HHp7aGU4owpFb5JDSAkUBp6bfMSRdMXc/45HX4BkVG0vVJ//prUaUEsRJ6ZsgSPm5xrgO+J+meFfrtJxKLKVl5q4hX5S/PqO6zadds9UqMygCvHO0MpHKgN1PeNPTge7BWcGpHPoaJwYJ2rQlfP9mOnw8p3Ejl0ot+tVElfOvlHE1CPdxqbz4BOqOv+ygDZY20UetO/CbDcjv1YMLzmL+w4eVwuBHj0xbwnCYg==",
+                                  "no_certificado_sat":"20001000000300022323",
+                                  "sello_sat":"CL2Ozfgn3j5rN5LGrx9a885JPveL7y/4AjoMF6I59gSC8DY7sRGMQf0P5rzx3YzDIxy20ZsTQWWkc9Ydr0eo1aPDIZSW2EYrRZ8C2bLhpRGq1E5FrC9zZ5LRyTzqPVTspD7SHHdxcwDAp3RH+jh9YIqsmbUi2goed7o0RQtRH0f+g8wSCPA8cvRVLVX16bh180gxlZvpws6V8ye5CUgQNFi7qf6e8m5S1lqnrUyoSaImobLhUMDVEvJ/DweNKEtguKIUT0HerIEHxWqj3b6tysXzW+vtogWEX/Oo7EB6F3SU/V9Ty10f3NWX9GVoOKsSgovsZp+YrZiIREMI1qnp4Q==",
+                                  "rfc_prov_certif":"IAD121214B34"
+                                }
+                              }
+                              ]
+                            }
+                          </code>
+                        </pre>
+
+                  <pre class="ruby">
+                          <code class="ruby">
+                            # Con el json de generacion de factura...
+
+                            json = '{"meta":{"empresa_uid":"asd123asd","empresa_api_key":"123123123","ambiente":"S","objeto":"factura"},"data":[{"datos_fiscales":{"certificado_pem":"","llave_pem":"","llave_password":""},"cfdi":{"cfdi__comprobante":{"folio":"123","fecha":"2018-03-25T12:12:12","tipo_comprobante":"I","lugar_expedicion":"21100","forma_pago":"01","metodo_pago":"PUE","moneda":"MXN","tipo_cambio":"1","subtotal":"99.00","total":"99.00","cfdi__emisor":{"rfc":"DDM090629R13","nombre":"Emisor Test","regimen_fiscal":"601"},"cfdi__receptor":{"rfc":"XEXX010101000","nombre":"Receptor Test","uso_cfdi":"G01"},"cfdi__conceptos":{"cfdi__concepto":[{"clave_producto_servicio":"01010101","clave_unidad":"KGM","cantidad":"1","descripcion":"descripcion test","valor_unitario":"99.00","importe":"99.00","unidad":"unidad","no_identificacion":"KGM123","cfdi__impuestos":{"cfdi__traslados":{"cfdi__traslado":[{"base":"99.00","impuesto":"002","tipo_factor":"Exento"}]}}}]}}}}]}';
+
+                            @cert = Docdigitales::Certificado.new
+
+                            # Donde el metodo generacion_factura(factura) se define:
+                            def generacion_factura(data)
+                            begin
+                            uri = "http://api.docdigitales.com/v1/facturas/generar";
+                            return get_post_response(uri, data)
+                            rescue => exception
+                            puts exception
+                            return nil
+                            end
+                            end
+
+                            # API_KEY - Api Key Privada de tu cuenta
+                            def get_post_response(uri, data)
+                            headers = {"Authorization": "Token token=#{API_KEY}", "Accept": "application/json", "Content-Type": "application/json", "Access-Control-Allow-Origin" => "*"}
+                            response = Unirest.post uri, headers:headers, parameters:data.to_json
+                            puts response.body
+                            return response.body
+                            end
+
+                            # Respuesta
+                            {
+                              "meta":{
+                                "ambiente":"S",
+                                "objeto":"factura",
+                                "respuesta_uid":"6d56aa20fd"
+                              },
+                              "data":[
+                              {
+                                "cfdi":{
+                                  "cfdi__comprobante":{
+                                    "folio":"123",
+                                    "fecha":"2018-07-11T12:01:40",
+                                    "tipo_comprobante":"I",
+                                    "lugar_expedicion":"21100",
+                                    "forma_pago":"01",
+                                    "metodo_pago":"PUE",
+                                    "moneda":"MXN",
+                                    "tipo_cambio":"1",
+                                    "subtotal":"99.00",
+                                    "total":"99.00",
+                                    "cfdi__emisor":{
+                                      "rfc":"DDM090629R13",
+                                      "nombre":"Emisor Test",
+                                      "regimen_fiscal":"601"
+                                    },
+                                    "cfdi__receptor":{
+                                      "rfc":"XEXX010101000",
+                                      "nombre":"Receptor Test",
+                                      "uso_cfdi":"G01"
+                                    },
+                                    "cfdi__conceptos":{
+                                      "cfdi__concepto":[
+                                      {
+                                        "clave_producto_servicio":"01010101",
+                                        "clave_unidad":"KGM",
+                                        "cantidad":"1",
+                                        "descripcion":"descripcion test",
+                                        "valor_unitario":"99.00",
+                                        "importe":"99.00",
+                                        "unidad":"unidad",
+                                        "no_identificacion":"KGM123",
+                                        "cfdi__impuestos":{
+                                          "cfdi__traslados":{
+                                            "cfdi__traslado":[
+                                            {
+                                              "base":"99.00",
+                                              "impuesto":"002",
+                                              "tipo_factor":"Exento"
+                                            }
+                                            ]
+                                          }
+                                        }
+                                      }
+                                      ]
+                                    }
+                                  }
+                                },
+                                "cfdi_respuesta":{
+                                  "timbrada":"true"
+                                },
+                                "cfdi_complemento":{
+                                  "xsi:schema_location":"http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd",
+                                  "xmlns:tfd":"http://www.sat.gob.mx/TimbreFiscalDigital",
+                                  "version":"1.1",
+                                  "uuid":"429A7DA9-EAAD-4AF5-9235-12992B3E0545",
+                                  "fecha_timbrado":"2018-07-11T14:01:42",
+                                  "sello_cfd":"jfyhUksoP27NZQMugio/LU9b9wvlSqc0MYTugpPsaFsoA6O7UnfoumETLKyKN4zXEYlQzo4RVKKhd6RAkfq/eKVl7MJZHngYJs7rwu+ZUZ0bAB+0HHp7aGU4owpFb5JDSAkUBp6bfMSRdMXc/45HX4BkVG0vVJ//prUaUEsRJ6ZsgSPm5xrgO+J+meFfrtJxKLKVl5q4hX5S/PqO6zadds9UqMygCvHO0MpHKgN1PeNPTge7BWcGpHPoaJwYJ2rQlfP9mOnw8p3Ejl0ot+tVElfOvlHE1CPdxqbz4BOqOv+ygDZY20UetO/CbDcjv1YMLzmL+w4eVwuBHj0xbwnCYg==",
+                                  "no_certificado_sat":"20001000000300022323",
+                                  "sello_sat":"CL2Ozfgn3j5rN5LGrx9a885JPveL7y/4AjoMF6I59gSC8DY7sRGMQf0P5rzx3YzDIxy20ZsTQWWkc9Ydr0eo1aPDIZSW2EYrRZ8C2bLhpRGq1E5FrC9zZ5LRyTzqPVTspD7SHHdxcwDAp3RH+jh9YIqsmbUi2goed7o0RQtRH0f+g8wSCPA8cvRVLVX16bh180gxlZvpws6V8ye5CUgQNFi7qf6e8m5S1lqnrUyoSaImobLhUMDVEvJ/DweNKEtguKIUT0HerIEHxWqj3b6tysXzW+vtogWEX/Oo7EB6F3SU/V9Ty10f3NWX9GVoOKsSgovsZp+YrZiIREMI1qnp4Q==",
+                                  "rfc_prov_certif":"IAD121214B34"
+                                }
+                              }
+                              ]
+                            }
+                          </code>
+                        </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="funciones_cuatro_api">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns">
+            <div class="column is-two-quarter" id="mobile_animacion_api" >
+              <div id="animacion_dos"></div>
+            </div>
+            <div class="column is-two-quarters" id="funciones_cuatro_api_texto">
+              <div class="columns">
+                <div class="column has-text-right padding_funciones_api is-half">
+                  <h4 class="titulo_contenido_gris">Cambios de SAT
+                    ¡Sin complicaciones!</h4>
+                  <p class="texto_contenido_gris">No necesitas tomar cursos, ni descifrar los cambios del CFDI en el SAT, en docDigitales API lo hacemos por ti.</p>
+                </div>
+                <div class="column is-half is-pulled-right navbar_desktop">
+                  <img src="img/icono_cambios.png" alt="icono cambios sat">
+                </div>
+              </div>
+              <div class="columns"  >
+                <div class="column has-text-right padding_funciones_api is-half">
+                  <h4 class="titulo_contenido_gris">Plataforma
+                    Amigable</h4>
+                  <p class="texto_contenido_gris">Podrás ver consumo histórico, detalle de peticiones y respuestas, descarga de XML y PDF, entre otras funciones.</p>
+                </div>
+                <div class="column is-half is-pulled-right navbar_desktop">
+                  <img src="img/icono_plataforma.png" alt="icono plataforma">
+                </div>
+
+              </div>
+              <div class="columns">
+                <div class="column has-text-right padding_funciones_api is-half">
+                  <h4 class="titulo_contenido_gris">Timbra, Cancela, Envía</h4>
+                  <p class="texto_contenido_gris">Con el API docDigitales podrás timbrar, cancelar y enviar tus CFDIs con la versión 3.3</p>
+                </div>
+                <div class="column is-half is-pulled-right navbar_desktop">
+                  <img src="img/icono_timbre.png" alt="icono timbres">
+                </div>
+
+              </div>
+              <div class="columns">
+                <div class="column has-text-right is-half">
+                  <h4 class="titulo_contenido_gris">Descarga, Almacena
+                    y Gestiona</h4>
+                  <p class="texto_contenido_gris">Podrás descargar los CFDI en formato XML y PDF, almacenar peticiones, respuestas y XML, al igual que gestionar múltiples RFC.</p>
+                </div>
+                <div class="column is-half is-pulled-right navbar_desktop">
+                  <img src="img/icono_almacena.png" alt="icono almacena">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pasos_api">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns">
+            <div class="column is-two-quarters">
+              <h3 class="titulo_gris_facturacion">¿Cuáles son los pasos para integrarte
+                a docDigitales API?</h3>
+            </div>
+          </div>
+
+          <div class="columns">
+            <a href="https://developer.docdigitales.com/usuarios/sign_up" target="_blank">
+              <div class="column" id="api_registrate">
+                <p>Regístrate</p>
+              </div>
+            </a>
+            <a href="/soporte-api" target="_blank">
+              <div class="column" id="api_obten">
+                <p>Obtén Credenciales</p>
+              </div>
+            </a>
+            <a href="https://developer.docdigitales.com/integracion" target="_blank">
+              <div class="column" id="api_revisa">
+                <p>Revisa la
+                  Documentacion</p>
+              </div>
+            </a>
+            <a href="https://developer.docdigitales.com/usuarios/sign_in" target="_blank">
+              <div class="column" id="api_integrate">
+                <p>Integrate y
+                  haz pruebas</p>
+              </div>
+            </a>
+            <a href="/soporte-api" target="_blank">
+              <div class="column" id="api_contrata">
+                <p>Contrata </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+
+    <section>
+      <div class="columns" id="planes_cta">
+        <div class="column is-offset-1 is-half">
+          <h3 class="has-text-left titulo_gris">Simplificamos la facturación</h3>
+          <p class="has-text-left texto_contenido_gris" id="planes_text_cta_padding">Obtén tu demo gratis y descubre los grandes beneficios de integrar y conectar tu sistema a docDigitales API.</p>
+        </div>
+        <div class="column">
+          <div class="columns is-pulled-right"><a class="button boton_rojo" href="https://developer.docdigitales.com/usuarios/sign_up" target="_blank">Prueba API docDigitales</a></div>
+          <div class="columns is-pulled-right" id="planes_contactanos"><a href="/soporte-api" target="_blank" class="button boton_outline_gris">Contáctanos</a></div>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+    </section>
+    <section class="footer_fondo">
+      <div class="columns">
+        <div class="column is-offset-1 is-10">
+          <div class="columns">
+            <div class="column">
+              <h5>Secciones</h5>
+              <ul>
+                <li><a href="/facturacion-en-linea">Facturación en Línea</a></li>
+                <li><a href="/api">API</a></li>
+                <li> <a href="https://blog.docdigitales.com/">Blog</a></li>
+                <li> <a href="/planes">Planes</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/registro/sistema">Registro</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/login">Inicio Sesión</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Ayuda</h5>
+              <ul>
+                <li><a href="https://blog.docdigitales.com/centro-ayuda/">Centro de Ayuda</a></li>
+                <li><a href="/soporte#seccion_preguntas">Preguntas Frecuentes</a></li>
+                <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+                <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+                <li><a href="/acuerdo-de-niveles">Acuerdo de Niveles de Servicio</a></li>
+                <li><a href="/politica-de-privacidad-app">Política de Privacidad App Móvil</a></li>
+                <li><a href="/soporte">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Enlaces SAT</h5>
+              <ul>
+                <li><a href="https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas%20" target="_blank">Trámite de Certificado de Sello Digital</a></li>
+                <li><a href="https://www.sat.gob.mx/aplicacion/80523/verifica-tus-facturas-electronicas%20%20" target="_blank">Verifica tus Facturas</a></li>
+                <li><a href="https://www.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20)" target="_blank">Formato de Factura(Anexo 20)</a></li>
+                <ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column  is-10 is-offset-1">
+          <div class="columns">
+            <div class="column is-offset-8">
+              <a href="https://www.sat.gob.mx/home" target="_blank"> <img src="img/sat-logo.png" alt=" logo sat" width="50%"></a>
+            </div>
+            <div class="column">
+              <a href="https://www.timbox.com.mx/" target="_blank"> <img src="img/timbox_logo.png" alt="logo de Timbox" width="50%"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_secudario">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns">
+            <div class="column">
+              <h6>Facturación en Línea docDigitales México</h6>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="columns iconos_sociales">
+                <div class="column">
+                  <a href="https://www.facebook.com/DocDigitales/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://mx.linkedin.com/company/documentos-digitales-de-mexico" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://github.com/docdigitales" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="SVG 2/svg2.js" type="text/javascript"></script>
+  <script src="SVG 4/svg4.js" type="text/javascript"></script>
+
+  <!-- Start of LiveChat (www.livechatinc.com) code -->
+  <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 8120781;
+    (function() {
+      var lc = document.createElement('script');
+      lc.type = 'text/javascript';
+      lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+  <noscript>
+    <a href="https://www.livechatinc.com/chat-with/8120781/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
+  <!-- End of LiveChat code -->
+
+</body>
+
+</html>

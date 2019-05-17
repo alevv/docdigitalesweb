@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planes docDigitales | Facturación en Línea</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta name="description" content="Los mejores planes para el sistema de facturación en línea más fácil de usar en México, ideal para Pymes, empresas de servicios y freelancers.">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22599809-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-22599809-3');
+  </script>
+
+
+</head>
+
+<body>
+  <div class="estilo_texto">
+
+    <section id="planes_primera_seccion_fondo">
+      <div class="columns" id="planes_primera_seccion_triangulos">
+        <div class="column is-10 is-offset-1">
+
+          <!-- PRE NAVBAR -->
+          <div class="columns pre_navbar is-vcentered">
+            <div class="column is-offset-7 is-paddingless has-text-right">
+              <span class="pre_navbar_item navbar_desktop" data-tippy=" <b>Horario de Atención </b><br>  Lunes a Viernes <br> 9:30am a 7:00pm TC" data-tippy-arrow="true"><i class="fas fa-phone"></i>01800 788 5783</span>
+            </div>
+            <div class="column is-1 is-paddingless has-text-centered">
+              <a href="/soporte" class="contacto_hover">
+                <p class="pre_navbar_item navbar_desktop">Soporte</p>
+              </a>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="/">
+                    <img src="img/logo_docdigitales_blanco.png" alt="logo docDigitales blanco" id="imagen_logo">
+                  </a>
+                  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span class="span_blanco" aria-hidden="true"></span>
+                    <span class="span_blanco" aria-hidden="true"></span>
+                    <span class="span_blanco" aria-hidden="true"></span>
+                  </a>
+
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+
+                  <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link item_menu_blanco hover_menu_mobile" id="como_funciona">
+                        Cómo Funciona
+                      </a>
+
+                      <div class="navbar-dropdown is-boxed" id="drop_funciona">
+                        <a class="navbar-item hover_menu_mobile drop_item" href="/facturacion-en-linea">
+                          Facturación en Línea
+                        </a>
+                        <a class="navbar-item hover_menu_mobile drop_item" href="/api">
+                          API
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link item_menu_blanco hover_menu_mobile" id="como_compania">
+                        Compañía
+                      </a>
+
+                      <div class="navbar-dropdown is-boxed" id="drop_compania">
+                        <a class="navbar-item hover_menu_mobile drop_item" href="/sobre-nosotros">
+                          Sobre Nosotros
+                        </a>
+                        <a class="navbar-item hover_menu_mobile drop_item" href="https://blog.docdigitales.com/">
+                          Blog
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <a href="/planes" class="navbar-item item_menu_blanco item_menu_blanco_hover hover_menu_mobile">
+                      Planes
+                    </a>
+
+                    <div class="navbar-item has-text-right">
+                      <div class="buttons">
+                        <a class="button boton_prueba_menu" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">
+                          <strong>Prueba Gratis</strong>
+                        </a>
+                        <a class="button boton_iniciar_menu" href="https://sistema.docdigitales.com/" target="_blank">
+                          Iniciar Sesión
+                        </a>
+                      </div>
+                      <hr class="navbar-divider navbar_mobile">
+                      <a class="hover_menu_mobile hover_menu_mobile navbar-item navbar_mobile"><i class="fas fa-phone"></i>01800 788 5783</a>
+                      <a class="navbar-item navbar_mobile hover_menu_mobile" href="/soporte" target="_blank">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <!-- PLANES SIN CARACTERISTICAS -->
+          <div class="columns">
+            <div class="column is-half title">
+              <h1 id="planes_titulo">Escoge la solución adecuada para ti</h1>
+
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column is-one-quarter">
+              <a href="#funciones_link" class="boton_terciario_blanco scroll" id="planes_boton_blanco">Compara las funciones <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="column is-two-quarters has-text-right">
+              <p class="plan_switch">¡Paga Anualmente y obtén un mes gratis!</p>
+              <!-- Rounded switch -->
+              <label class="switch" for="checkbox" id="switch_redondo">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+              </label>
+            </div>
+          </div>
+          <div class="columns">
+            <p class="plan_usuarios" id="moneda">Moneda: MXN</p>
+          </div>
+          <section id="precios_planes">
+            <div class="columns is-vcentered">
+              <div class="column is-one-quarter">
+                <div class="plan_cuadro has-text-centered	">
+
+                  <h3 class="planes_nombre_plan">Básico</h3>
+                  <hr class="planes_linea">
+                  <span class="planes_precio_chico">$</span>
+                  <h4 class="planes_precio_grande plan_basico_texto">99</h4><span class="planes_precio_chico">+IVA/mes</span>
+                  <h5 class="plan_timbres">Timbres: 15</h5>
+                  <h5 class="plan_usuarios">Usuarios: 1</h5>
+                </div>
+              </div>
+
+              <div class="column is-one-quarter">
+                <div class="plan_cuadro has-text-centered	">
+                  <h3 class="planes_nombre_plan">Plus</h3>
+                  <hr class="planes_linea">
+                  <span class="planes_precio_chico">$</span>
+                  <h4 class="planes_precio_grande plan_plus_texto">199</h4><span class="planes_precio_chico">+IVA/mes</span>
+                  <h5 class="plan_timbres">Timbres: 50</h5>
+                  <h5 class="plan_usuarios">Usuarios: 1</h5>
+                </div>
+
+              </div>
+              <div class="column is-one-quarter">
+
+                <div class="plan_cuadro_highlight has-text-centered	">
+                  <h4 id="el_mas_popular">El Más Popular</h4>
+                  <h3 class="planes_nombre_plan">Ilimitado</h3>
+                  <hr class="planes_linea">
+                  <span class="planes_precio_chico">$</span>
+                  <h4 class="planes_precio_grande plan_ilimitado_texto">299</h4><span class="planes_precio_chico">+IVA/mes</span>
+                  <h5 class="plan_timbres">Timbres: ilimitados</h5>
+                  <h5 class="plan_usuarios">Usuarios: 1</h5>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="plan_cuadro has-text-centered	">
+
+                  <h3 class="planes_nombre_plan">Premium</h3>
+                  <hr class="planes_linea">
+                  <span class="planes_precio_chico">$</span>
+                  <h4 class="planes_precio_grande plan_premium_texto">399</h4><span class="planes_precio_chico">+IVA/mes</span>
+                  <h5 class="plan_timbres">Timbres: ilimitados</h5>
+                  <h5 class="plan_usuarios">Usuarios: 3</h5>
+                </div>
+              </div>
+
+            </div>
+          </section>
+    </section>
+  </div>
+  </div>
+
+
+
+
+  <!-- TABLA PLANES DESKTOP-->
+
+  <section id="tabla_planes">
+    <div class="columns has-text-centered " id="funciones_link">
+      <div class="column is-offset-1"></div>
+
+      <div class="column" id="plan_basico">
+        <h2>Básico</h2><p class="texto_contenido_gris">$99+IVA/mes</p>
+      </div>
+      <div class="column plan_fondo">
+        <h2>Plus</h2><p class="texto_contenido_gris">$199+IVA/mes</p>
+      </div>
+      <div class="column plan_fondo">
+        <h2>Ilimitado</h2><p class="texto_contenido_gris">$299+IVA/mes</p>
+      </div>
+      <div class="column" id="plan_premium">
+        <h2>Premium</h2><p class="texto_contenido_gris">$399+IVA/mes</p>
+      </div>
+
+      <div class="column is-1"></div>
+
+    </div>
+
+    <div class="columns  has-text-centered ">
+      <div class="column is-offset-1 planes_borde">
+        <p class="has-text-left	">Timbres</p>
+      </div>
+      <div class="column planes_borde">
+        <p>15</p>
+      </div>
+      <div class="column planes_borde">
+        <p>50</p>
+      </div>
+      <div class="column planes_borde">
+        <p>Ilimitados</p>
+      </div>
+      <div class="column planes_borde">
+        <p>Ilimitados</p>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+
+    <div class="columns  has-text-centered ">
+      <div class="column is-offset-1 planes_borde">
+        <p class="has-text-left	">Usuarios Incluidos</p>
+      </div>
+      <div class="column planes_borde">
+        <p>1</p>
+      </div>
+      <div class="column planes_borde">
+        <p>1</p>
+      </div>
+      <div class="column planes_borde">
+        <p>1</p>
+      </div>
+      <div class="column planes_borde">
+        <p>3</p>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+
+    <div class="columns  has-text-centered ">
+      <div class="column is-offset-1 planes_borde">
+        <p class="has-text-left" id="funciones_click">Funciones Básicas <i class="fas fa-plus"></i> <i class="fas fa-minus no_show minus_sign"></i> </p>
+        <p class="has-text-left no_show" id="funciones_click_minus">Funciones Básicas <i class="fas fa-minus"></i> </p>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+    <!-- FUNCIONES BASICAS -->
+    <section class="section_basicas no_show" id="funciones_basicas">
+      <div class="columns  has-text-centered ">
+        <div class="column is-offset-1 planes_borde">
+          <p class="has-text-left	">Módulo de Facturación</p>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+      <div class="columns  has-text-centered ">
+        <div class="column is-offset-1 planes_borde">
+          <p class="has-text-left	">Módulo de Nóminas</p>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+      <div class="columns  has-text-centered ">
+        <div class="column is-offset-1 planes_borde">
+          <p class="has-text-left	">Complemento de Pagos</p>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+      <div class="columns  has-text-centered ">
+        <div class="column is-offset-1 planes_borde">
+          <p class="has-text-left	">Cotizaciones</p>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+      <div class="columns  has-text-centered ">
+        <div class="column is-offset-1 planes_borde">
+          <p class="has-text-left	">Reportes</p>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+      <div class="columns  has-text-centered ">
+        <div class="column is-offset-1 planes_borde">
+          <p class="has-text-left	">Gastos</p>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+      <div class="columns  has-text-centered ">
+        <div class="column is-offset-1 planes_borde">
+          <p class="has-text-left	">Catálogos de Clientes, Productos y Staff</p>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column planes_borde">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+    </section>
+
+
+
+    <div class="columns  has-text-centered ">
+      <div class="column is-offset-1 planes_borde">
+        <p class="has-text-left	">Nóminas Recurrentes</p>
+      </div>
+      <div class="column planes_borde">
+        <p>-</p>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+
+    <div class="columns  has-text-centered">
+      <div class="column is-offset-1 planes_borde">
+        <p class="has-text-left	">Gráfica Comparativa de Facturación</p>
+      </div>
+      <div class="column planes_borde">
+        <p>-</p>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+
+    <div class="columns  has-text-centered">
+      <div class="column is-offset-1 planes_borde">
+        <p class="has-text-left	">Descarga Validación de CFDI</p>
+      </div>
+      <div class="column planes_borde">
+        <p>-</p>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+
+    <div class="columns  has-text-centered ">
+      <div class="column is-offset-1 planes_borde">
+        <p class="has-text-left	">Usuarios Adicionales</p>
+      </div>
+      <div class="column planes_borde">
+        <p>-</p>
+      </div>
+      <div class="column planes_borde">
+        <p>-</p>
+      </div>
+      <div class="column planes_borde">
+        <p>-</p>
+      </div>
+      <div class="column planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+    <div class="columns  has-text-centered ">
+      <div class="column is-offset-1 planes_borde">
+        <a href="#adminsat_link" class="scroll">
+          <p class="has-text-left">AdminSAT</p>
+        </a>
+      </div>
+      <div class="column planes_borde">
+        <p>+$99/mes</p>
+      </div>
+      <div class="column planes_borde">
+        <p>+$99/mes</p>
+      </div>
+      <div class="column planes_borde">
+        <p>+$99/mes</p>
+      </div>
+      <div class="column  has-text-centered planes_borde">
+        <i class="fas fa-check"></i>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+
+
+    <div class="columns">
+      <div class="column is-one-third is-offset-1">
+        <a href="/facturacion-en-linea" class="boton_terciario_azul">Explora todas las funciones <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TABLA FUNCIONES MOBILE -->
+  <section id="tabla_planes_mobile">
+
+    <div class="plan_cuadro_funciones">
+      <div class="columns">
+        <div class="column">
+          <h2 class="planes_nombre_plan">Básico</h2>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="has-text-left	plan_usuarios">Funciones Básicas <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">AdminSAT <b>+99 +IVA/mes</b></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Nóminas Recurrentes <i class="fas fa-times"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Plataforma Inteligente<i class="fas fa-times"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Descarga Validación de CFDI <i class="fas fa-times"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Usuarios Adicionales <i class="fas fa-times"></i></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="plan_cuadro_funciones">
+      <div class="columns">
+        <div class="column">
+          <h2 class="planes_nombre_plan">Plus</h2>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="has-text-left plan_usuarios">Funciones Básicas <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">AdminSAT <b>+99 +IVA/mes</b></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Nóminas Recurrentes <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Plataforma Inteligente<i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Descarga Validación de CFDI<i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Usuarios Adicionales <i class="fas fa-times"></i></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="plan_cuadro_funciones">
+      <div class="columns">
+        <div class="column">
+          <h2 class="planes_nombre_plan">Ilimitado</h2>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <p class="has-text-left	plan_usuarios">Funciones Básicas <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">AdminSAT <b>+99 +IVA/mes</b></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Nóminas Recurrentes <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Plataforma Inteligente<i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Descarga Validación de CFDI<i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Usuarios Adicionales <i class="fas fa-times"></i></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="plan_cuadro_funciones">
+      <div class="columns">
+        <div class="column">
+          <h2 class="planes_nombre_plan">Premium</h2>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="has-text-left plan_usuarios">Funciones Básicas <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">AdminSAT <b>+99 +IVA/mes</b></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Nóminas Recurrentes <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Plataforma Inteligente<i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Descarga Validación de CFDI <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <p class="plan_usuarios">Usuarios Adicionales <i class="fas fa-check"></i></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="prueba_planes">
+    <div class="columns is-vcentered" id="planes_mobile_crea">
+      <div class="column is-one-quarter is-offset-1">
+        <h6 class="plan_titulo_gris">Crea tu cuenta gratis</h6>
+        <p class="plan_subtitulo_gris">¡No necesitas poner los datos de tu tarjeta!</p>
+      </div>
+      <div class="column is-one-quarter">
+        <a class="button boton_rojo" id="margin_boton_primera" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">
+          <strong>Prueba docDigitales</strong>
+        </a>
+      </div>
+      <div class="column has-text-centered">
+        <h3 id="planes_medida">¿Necesitas un plan a la medida? Contáctanos: <a data-tippy=" <b>Horario de Atencion </b><br>  Lunes a Viernes <br> 9:30am a 7:00pm TC"
+            data-tippy-arrow="true">01800 788 5783</a></h3>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+  </section>
+
+  <!-- ADMINSAT -->
+
+  <section>
+    <div class="columns" id="planes_adminsat">
+      <div class="column is-two-thirds is-offset-1"id="adminsat_link">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <h2 class="title">AdminSAT</h2>
+            <p class="texto_contenido_blanco">La nueva herramienta que desarrollamos para que tengas toda tu facturación electrónica en un mismo lugar. Dando un solo clic, docDigitales carga todas las facturas que han generado para ti tus
+              proveedores y te aparecen como Facturas Recibidas dentro del sistema. Una vez recibidas, las puedes validar, descargar, catalogar como Gastos, verlas en un reporte o aceptar cancelaciones de las mismas. Todo directamente desde
+              docDigitales.</p>
+          </div>
+        </div>
+        <div id="animacion_tres"></div>
+      </div>
+      <div class="column">
+        <div class="plan_cuadro has-text-centered">
+          <h3 class="planes_nombre_plan">AdminSat</h3>
+          <hr class="planes_linea">
+          <span class="planes_precio_chico">$</span>
+          <h4 class="planes_precio_grande">99</h4><span class="planes_precio_chico">+IVA/mes</span>
+          <h5 class="plan_timbres">Sin Timbres</h5>
+          <h5 class="plan_usuarios">Usuarios: 1</h5>
+          <p class="texto_contenido_blanco padding_adminsat">Sincroniza Automáticamente y Administra todos tus CFDIs</p>
+          <p class="texto_contenido_blanco padding_adminsat"><b>Sincroniza con el SAT:</b></p>
+          <p class="texto_contenido_blanco padding_adminsat">Facturas Emitidas y Recibidas</p>
+          <p class="texto_contenido_blanco padding_adminsat">Complementos de pago emitidos y recibidos</p>
+          <p class="texto_contenido_blanco padding_adminsat"><b>AdminSAT te Permite:</b></p>
+          <p class="texto_contenido_blanco padding_adminsat">Enviar solicitudes de cancelación a tus clientes</p>
+          <p class="texto_contenido_blanco padding_adminsat">Descargar masivamente tus CFDIs emitidos y recibidos</p>
+          <p class="texto_contenido_blanco padding_adminsat">Generar Reportes</p>
+        </div>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+  </section>
+
+  <!-- API -->
+
+  <section id="planes_seccion_api">
+    <div class="columns">
+      <div class="column is-half is-offset-1">
+        <p>¿Ya tienes un sistema y necesitas integrar timbrado de facturas y complemento de pagos? <a id="planes_api_link" href="/api">docDigitales API</a> es una gran herramienta ideal para desarrolladores de sistemas.</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA FINAL -->
+
+  <section>
+    <div class="columns" id="planes_cta">
+      <div class="column is-offset-1 is-half">
+        <h3 class="has-text-left titulo_gris">¿No tienes docDigitales?</h3>
+        <p class="has-text-left texto_contenido_gris" id="planes_text_cta_padding">¡Cámbiate al sistema de facturación en línea más amigable y con las mejores funciones! Regístrate haz la prueba gratis</p>
+      </div>
+      <div class="column">
+        <div class="columns is-pulled-right"><a class="button boton_rojo" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">Prueba Gratis docDigitales</a></div>
+        <div class="columns is-pulled-right" id="planes_contactanos"><a href="/soporte" class="button boton_outline_gris">Contáctanos</a></div>
+      </div>
+      <div class="column is-1"></div>
+    </div>
+  </section>
+  <section class="footer_fondo">
+    <div class="columns">
+      <div class="column is-offset-1 is-10">
+        <div class="columns">
+          <div class="column">
+            <h5>Secciones</h5>
+            <ul>
+              <li><a href="/facturacion-en-linea">Facturación en Línea</a></li>
+              <li><a href="/api">API</a></li>
+              <li> <a href="https://blog.docdigitales.com/">Blog</a></li>
+              <li> <a href="/planes">Planes</a></li>
+              <li> <a href="https://sistema.docdigitales.com/account/registro/sistema">Registro</a></li>
+              <li> <a href="https://sistema.docdigitales.com/account/login">Inicio Sesión</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h5>Ayuda</h5>
+            <ul>
+              <li><a href="https://blog.docdigitales.com/centro-ayuda/">Centro de Ayuda</a></li>
+              <li><a href="/soporte#seccion_preguntas">Preguntas Frecuentes</a></li>
+              <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+              <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+              <li><a href="/acuerdo-de-niveles">Acuerdo de Niveles de Servicio</a></li>
+              <li><a href="/politica-de-privacidad-app">Política de Privacidad App Móvil</a></li>
+              <li><a href="/soporte">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h5>Enlaces SAT</h5>
+            <ul>
+              <li><a href="https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas%20" target="_blank">Trámite de Certificado de Sello Digital</a></li>
+              <li><a href="https://www.sat.gob.mx/aplicacion/80523/verifica-tus-facturas-electronicas%20%20" target="_blank">Verifica tus Facturas</a></li>
+              <li><a href="https://www.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20)" target="_blank">Formato de Factura(Anexo 20)</a></li>
+              <ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column  is-10 is-offset-1">
+        <div class="columns">
+          <div class="column is-offset-8">
+            <a href="https://www.sat.gob.mx/home" target="_blank"> <img src="img/sat-logo.png" alt=" logo sat" width="50%"></a>
+          </div>
+          <div class="column">
+            <a href="https://www.timbox.com.mx/" target="_blank"> <img src="img/timbox_logo.png" alt="logo de Timbox" width="50%"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer_secudario">
+    <div class="columns">
+      <div class="column is-10 is-offset-1">
+        <div class="columns">
+          <div class="column">
+            <h6>Facturación en Línea docDigitales México</h6>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="columns iconos_sociales">
+              <div class="column">
+                <a href="https://www.facebook.com/DocDigitales/" target="_blank"><i class="fab fa-facebook"></i></a>
+              </div>
+              <div class="column">
+                <a href="https://mx.linkedin.com/company/documentos-digitales-de-mexico" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <div class="column">
+                <a href="https://github.com/docdigitales" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="SVG 3/svg3.js" type="text/javascript"></script>
+  <!-- Start of LiveChat (www.livechatinc.com) code -->
+  <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 8120781;
+    (function() {
+      var lc = document.createElement('script');
+      lc.type = 'text/javascript';
+      lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+  <noscript>
+    <a href="https://www.livechatinc.com/chat-with/8120781/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
+  <!-- End of LiveChat code -->
+</body>
+
+</html>

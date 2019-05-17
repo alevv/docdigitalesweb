@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /contacto
+Disallow: /planes-por-factura
+Disallow: /preguntas-frecuentes
+Sitemap: https://www.docdigitales.com/sitemap.xml

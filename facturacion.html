@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>docDigitales | Facturación en Línea</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="El sistema de facturación en línea más fácil de usar en México. Ideal para PyMes, empresas de servicios y freelancers. Prueba gratis 30 días.">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22599809-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-22599809-3');
+  </script>
+
+</head>
+
+<body>
+  <div class="estilo_texto">
+    <section id="facturacion_primera_seccion_fondo">
+      <div class="columns" id="facturacion_primera_seccion_circulos">
+        <div class="column is-10 is-offset-1">
+          <!-- PRE NAVBAR -->
+          <div class="columns pre_navbar is-vcentered">
+            <div class="column is-offset-7 is-paddingless has-text-right">
+              <span class="pre_navbar_item navbar_desktop" data-tippy=" <b>Horario de Atención </b><br>  Lunes a Viernes <br> 9:30am a 7:00pm TC" data-tippy-arrow="true"><i class="fas fa-phone"></i>01800 788 5783</span>
+            </div>
+            <div class="column is-1 is-paddingless has-text-centered">
+              <a href="/soporte" class="contacto_hover">
+                <p class="pre_navbar_item navbar_desktop">Soporte</p>
+              </a>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column">
+              <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="/">
+                    <img src="img/logo_docdigitales_blanco.png" alt="logo docDigitales blanco" id="imagen_logo">
+                  </a>
+                  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span class="span_blanco" aria-hidden="true"></span>
+                    <span class="span_blanco" aria-hidden="true"></span>
+                    <span class="span_blanco" aria-hidden="true"></span>
+                  </a>
+
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+
+                  <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link item_menu_blanco hover_menu_mobile item_menu_blanco_hover">
+                        Cómo Funciona
+                      </a>
+
+                      <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item hover_menu_mobile hover_menu_mobile drop_item" href="/facturacion-en-linea">
+                          Facturación en Línea
+                        </a>
+                        <a class="navbar-item hover_menu_mobile drop_item" href="/api">
+                          API
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link item_menu_blanco hover_menu_mobile" id="como_compania">
+                        Compañía
+                      </a>
+
+                      <div class="navbar-dropdown is-boxed" id="drop_compania">
+                        <a class="navbar-item hover_menu_mobile drop_item" href="/sobre-nosotros">
+                          Sobre Nosotros
+                        </a>
+                        <a class="navbar-item hover_menu_mobile drop_item" href="https://blog.docdigitales.com/">
+                          Blog
+                        </a>
+
+                      </div>
+                    </div>
+
+                    <a href="/planes" class="navbar-item item_menu_blanco hover_menu_mobile">
+                      Planes
+                    </a>
+
+                    <hr class="navbar-divider">
+
+                    <div class="navbar-item has-text-right">
+                      <div class="buttons">
+                        <a class="button boton_prueba_menu" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">
+                          <strong>Prueba Gratis</strong>
+                        </a>
+                        <a class="button boton_iniciar_menu" href="https://sistema.docdigitales.com/" target="_blank">
+                          Iniciar Sesión
+                        </a>
+                      </div>
+                      <hr class="navbar-divider navbar_mobile">
+                      <a class="hover_menu_mobile hover_menu_mobile navbar-item navbar_mobile"><i class="fas fa-phone"></i>01800 788 5783</a>
+                      <a class="navbar-item navbar_mobile hover_menu_mobile" href="/soporte">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+
+          <!-- H1 Primera Seccion-->
+          <section>
+            <div class="columns">
+              <div class="column is-half" id="facturacion_titulo">
+                <div class="columns">
+                  <div class="column">
+                    <h1 class="title">
+                      docDigitales Facturación en Línea
+                    </h1>
+                  </div>
+                </div>
+
+                <div class="columns">
+                  <div class="column">
+                    <p class="texto_contenido_blanco" id="mobile_texto_facturacion">
+                      Conoce el Sistema de Facturación en Línea más fácil de usar, ideal para para pymes, sector servicios y freelancers. </p>
+                    <a class="button boton_rojo" id="margin_boton_primera" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">Prueba docDgitales gratis</a><br>
+                    <a href="#que_funciones" class="boton_terciario_blanco scroll">Explora todas las funciones <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div id="animacion_tres"></div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+    </section>
+
+
+    <!--  QUE PUEDES HACER -->
+    <section>
+      <div class="columns">
+        <div class="column is-offset-1">
+          <h3 class="titulo_gris_facturacion" id="que_funciones">¿Qué puedes hacer con docDigitales?</h3>
+        </div>
+      </div>
+
+      <div class="columns">
+
+        <div class="column is-offset-1">
+          <p class="has-text-centered facturacion_titulo_funciones" id="facturacion_ingresos" >Ingresos</p>
+          <div class="columns funciones_fondo_gris">
+            <div class="column">
+              <a href="#emitidas_links" class="has-text-centered link_funciones scroll">Facturas Emitidas</a><br><br>
+              <a href="#pagos_link" class="has-text-centered link_funciones scroll">Cuentas por Cobrar</a><br><br>
+              <a href="#cotizacion_link" class="has-text-centered link_funciones scroll">Cotizaciones</a><br><br>
+              <a href="#descarga_emitida_link" class="has-text-centered link_funciones scroll">Descarga masiva de CFDIs</a> <br> <br>
+              <a href="#cancela_emitida_link" class="has-text-centered link_funciones scroll">Nóminas</a><br><br>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <p class="has-text-centered facturacion_titulo_funciones" id="facturacion_egresos">Egresos</p>
+          <div class="columns funciones_fondo_gris">
+            <div class="column">
+              <a href="#recibidas_link" class="has-text-centered link_funciones scroll">Facturas Recibidas</a><br><br>
+              <a href="#gastos_link" class="has-text-centered link_funciones scroll">Gastos</a><br><br>
+              <a href="#pagos_proveedores_link" class="has-text-centered link_funciones scroll">Solicitudes de Cancelación</a><br><br>
+              <a href="#cancela_recibidas_link" class="has-text-centered link_funciones scroll"> Acceso a tu Contador</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <p class="has-text-centered facturacion_titulo_funciones" id="facturacion_reportes">Reportes</p>
+          <div class="columns funciones_fondo_gris">
+            <div class="column">
+              <a href="#ventas_link" class="has-text-centered link_funciones scroll">Reportes de Ventas</a><br><br>
+              <a href="#facturas_link" class="has-text-centered link_funciones scroll">Reportes de Facturación</a><br><br>
+              <a href="#financieros_link" class="has-text-centered link_funciones scroll">Reportes Financieros</a><br><br>
+              <a href="nominas_link" class="has-text-centered link_funciones scroll">Reportes de Nóminas</a><br><br>
+              <a href="#grafica_link" class="has-text-centered link_funciones scroll">Gráfica comparativa de facturación</a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+
+    </section>
+
+    <!-- INGRESOS -->
+    <section>
+      <div class="columns">
+        <div class="column is-offset-1 is-10" id="facturacion_ingresos_cuadro">
+          <div class="columns  is-vcentered">
+            <div class="column is-one-quarter">
+              <div id="animacion_factura" class="is-pulled-left icono_seccion_tercera"></div>
+            </div>
+            <div class="column is-one-quarter">
+              <p class="has-text-centered facturacion_titulo_funciones" id="facturacion_ingresos">Ingresos</p>
+            </div>
+            <div class="column is-two-quarters">
+              <p class="texto_contenido_blanco facturacion_texto_padding">
+                docDigitales es un sistema de facturación y administración diseñado para ti. Ahorra tiempo y dinero aprovechando todas las funcionalidades que ofrece el sistema para obtener una mejor administración de tu negocio. Puedes generar
+                Facturas, Cotizaciones, Nóminas, Complementos de Pagos, llevar tus cuentas por cobrar y obtener Reportes para una mejor toma de decisiones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_gris" id="emitidas_links">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Facturas Emitidas</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">Fácil y rápidamente realiza tu facturación electrónica con docDigitales y utiliza las funcionalidades adicionales del sistema para hacerlo más sencillo cada vez. Copia facturas anteriores para no hacerlas desde el inicio, guarda facturas que no hayas terminado y utiliza el módulo de facturación recurrente para hacerlas de manera automática.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_blanco" id="pagos_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Cuentas por Cobrar</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                ¡Que te paguen más rápido! Con el nuevo módulo de cuentas por cobrar que te ofrece docDigitales, lleva las cuentas de tus clientes a crédito o contado y manda un recordatorio de manera automática cuando te falte recibir pago. Además,
+                genera reportes y recibe avisos para tener tu cartera bajo control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_gris" id="cotizacion_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Cotización</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Luce más profesional con tu cliente enviando cotizaciones desde el sistema y con tu logo. Además, una vez que tu cliente acepte la cotización que le enviaste, coviértela en factura automáticamente con un solo clic. Las cotizaciones
+                también las puedes guardar, editar, copiar y cancelar, igual que tus facturas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_blanco" id="cancela_emitida_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Nóminas</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Genera las nóminas del resto de tu equipo de una manera fácil y automatizada. Una vez cargada la información del staff en el sistema, con un solo clic éstas se generan de manera automática, recurrente y con validez ante el SAT.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_gris" id="descarga_emitida_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Descarga Masiva de CFDI</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                En docDigitales puedes descargar todos los XML y PDF de tus CFDI emitidos y recibidos de manera rápida y sencilla.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EGRESOS -->
+    <section>
+      <div class="columns">
+        <div class="column is-offset-1 is-10" id="facturacion_egresos_cuadro">
+          <div class="columns  is-vcentered">
+            <div class="column is-one-quarter">
+              <div id="svgemitida" class="is-pulled-left icono_seccion_tercera"></div>
+            </div>
+            <div class="column is-one-quarter">
+              <p class="has-text-centered facturacion_titulo_funciones" id="facturacion_egresos">Egresos</p>
+            </div>
+            <div class="column is-two-quarters">
+              <p class="texto_contenido_blanco facturacion_texto_padding">
+                Con nuestro nuevo módulo AdminSat, recibe toda la facturación de tus gastos en un mismo lugar. Con un solo clic, obtenemos del SAT todas las facturas que te generen tus proveedores y aparecen dentro del sistema bajo “Facturas Recibidas” de manera automática.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_blanco" id="recibidas_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Facturas Recibidas</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Ahorra muchísimo tiempo. Ya no tienes necesidad de buscar las facturas que comprueban tus gastos en el correo electrónico o pedirlas a cada uno de tus proveedores una por una. Nosotros las extraemos de manera automática desde el SAT utilizando tu RFC y todas aparecen dentro de tu sistema. Además podrás ver también el estatus de tus facturas electrónicas y mejor aún, ¡se validan automáticamente! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_gris" id="pagos_proveedores_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Solicitudes de Cancelación</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Desde docDigitales, te notificamos cuando un proveedor te pide que autorices la cancelación de una factura. Responde a las solicitudes de cancelación directamente del sistema; sin necesidad de entrar al buzón tributario del SAT.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_blanco" id="gastos_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Gastos</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Ahorra dinero obteniendo un mejor control de tu presupuesto. Lleva todos tus gastos de manera ordenada por categoría y proveedor para que sepas en dónde puedes ahorrar. Además, hazlo de manera automática. Manda tus facturas recibidas
+                en línea a la categoría de gastos con un solo clic. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_gris" id="cancela_recibidas_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Acceso a tu Contador</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Haz más simple el flujo de información a tu contador. Dale acceso a tu sistema y pídele que descargue masivamente desde ahí todas las facturas de tus gastos. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- REPORTES -->
+    <section>
+      <div class="columns">
+        <div class="column is-offset-1 is-10" id="facturacion_catalogos_cuadro">
+          <div class="columns  is-vcentered">
+            <div class="column is-one-quarter">
+              <div id="svgreporte" class="is-pulled-left icono_seccion_tercera"></div>
+            </div>
+            <div class="column is-one-quarter">
+              <p class="has-text-centered facturacion_titulo_funciones" id="facturacion_catalogos">Reportes</p>
+            </div>
+            <div class="column is-two-quarters">
+              <p class="texto_contenido_blanco facturacion_texto_padding">
+                Mejora tu proceso de toma de decisiones a través de la información que es procesada y presentada hacia ti en forma de reportes para verificar y analizar los resultados de tu empresa. Todos los reportes se pueden descargar en excel
+                para que se conviertan en archivos de trabajo o bien, se pueden imprimir o guardar en PDF para tu registro. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_blanco" id="ventas_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Reportes de Ventas</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Utiliza los reportes de Ventas para evaluar las estrategias de tu negocio. docDigitales ofrece distintos reportes de Ventas. Puedes categorizar tus reportes de ventas por clientes, por persona de tu equipo o bien por los distintos
+                productos o servicios que vendes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_gris" id="facturas_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Reportes de Facturación</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                En estos reportes encontrarás todo el detalle de tu facturación. Puedes obtener un detalle histórico o bien filtrarlo por fecha, cantidades, tipo de facturación ¡y más! Estos reportes funcionan para facturas emitidas, recibidas, descargas masivas y recepción de pagos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_blanco" id="financieros_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Reportes Financieros</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                En esta sección encontrarás gráficas para ver tu información de manera más global, cuentas por cobrar y de control de gastos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_gris" id="nominas_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Reportes de Nóminas</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Desde este reporte podrás obtener toda la información histórica de tus nóminas filtrado por nombre del empleado, RFC, importes, fechas y más.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-10 is-offset-1 facturacion_tabla_blanco" id="grafica_link">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris"><b>Gráfica Comparativa
+                  de Facturación</b></p>
+            </div>
+            <div class="column is-one-third">
+              <p class="texto_contenido_gris">
+                Visualiza fácilmente el crecimiento de tu negocio en una gráfica que compara las ventas del año en curso vs el año anterior y descarga las tablas en excel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br><br><br><br>
+    <!-- CTA FINAL -->
+
+    <section>
+      <div class="columns" id="planes_cta">
+        <div class="column is-offset-1 is-half">
+          <h3 class="has-text-left titulo_gris">¿No tienes docDigitales?</h3>
+          <p class="has-text-left texto_contenido_gris" id="planes_text_cta_padding">¡Cámbiate al sistema de facturación en línea más amigable y con las mejores funciones! Regístrate, haz la prueba gratis</p>
+        </div>
+        <div class="column">
+          <div class="columns is-pulled-right"><a class="button boton_rojo" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">Prueba Gratis docDigitales</a></div>
+          <div class="columns is-pulled-right" id="planes_contactanos"><a href="/soporte" class="button boton_outline_gris">Contáctanos</a></div>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+    </section>
+
+    <section class="footer_fondo">
+      <div class="columns">
+        <div class="column is-offset-1 is-10">
+          <div class="columns">
+            <div class="column">
+              <h5>Secciones</h5>
+              <ul>
+                <li><a href="/facturacion-en-linea">Facturación en Línea</a></li>
+                <li><a href="/api">API</a></li>
+                <li> <a href="https://blog.docdigitales.com/">Blog</a></li>
+                <li> <a href="/planes">Planes</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/registro/sistema">Registro</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/login">Inicio Sesión</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Ayuda</h5>
+              <ul>
+                <li><a href="https://blog.docdigitales.com/centro-ayuda/">Centro de Ayuda</a></li>
+                <li><a href="/soporte#seccion_preguntas">Preguntas Frecuentes</a></li>
+                <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+                <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+                <li><a href="/acuerdo-de-niveles">Acuerdo de Niveles de Servicio</a></li>
+                <li><a href="/politica-de-privacidad-app">Política de Privacidad App Móvil</a></li>
+                <li><a href="/soporte">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Enlaces SAT</h5>
+              <ul>
+                <li><a href="https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas%20" target="_blank">Trámite de Certificado de Sello Digital</a></li>
+                <li><a href="https://www.sat.gob.mx/aplicacion/80523/verifica-tus-facturas-electronicas%20%20" target="_blank">Verifica tus Facturas</a></li>
+                <li><a href="https://www.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20)" target="_blank">Formato de Factura(Anexo 20)</a></li>
+                <ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column  is-10 is-offset-1">
+          <div class="columns">
+            <div class="column is-offset-8">
+              <a href="https://www.sat.gob.mx/home" target="_blank"> <img src="img/sat-logo.png" alt=" logo sat" width="50%"></a>
+            </div>
+            <div class="column">
+              <a href="https://www.timbox.com.mx/" target="_blank"> <img src="img/timbox_logo.png" alt="logo de Timbox" width="50%"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_secudario">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns">
+            <div class="column">
+              <h6>Facturación en Línea docDigitales México</h6>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="columns iconos_sociales">
+                <div class="column">
+                  <a href="https://www.facebook.com/DocDigitales/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://mx.linkedin.com/company/documentos-digitales-de-mexico" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://github.com/docdigitales" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="SVG 3/svg3.js" type="text/javascript"></script>
+  <script src="SVG Factura/factura.js" type="text/javascript"></script>
+  <script src="SVG Emitida/svgemitida.js" type="text/javascript"></script>
+  <script src="SVG Reportes/svgreporte.js" type="text/javascript"></script>
+  <!-- Start of LiveChat (www.livechatinc.com) code -->
+  <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 8120781;
+    (function() {
+      var lc = document.createElement('script');
+      lc.type = 'text/javascript';
+      lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+  <noscript>
+    <a href="https://www.livechatinc.com/chat-with/8120781/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
+  <!-- End of LiveChat code -->
+</body>
+
+</html>

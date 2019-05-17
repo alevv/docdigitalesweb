@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>docDigitales Soporte | Facturación en Línea</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="El sistema de facturación en línea más fácil de usar en México. Ideal para PyMes, empresas de servicios y freelancers. Prueba gratis 30 días.">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22599809-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-22599809-3');
+  </script>
+
+
+</head>
+
+<body>
+  <div class="estilo_texto" id="fondo_contacto_api">
+
+    <section class="columns">
+      <div class="column is-10 is-offset-1">
+
+        <!-- PRE NAVBAR -->
+        <div class="columns pre_navbar is-vcentered">
+          <div class="column is-offset-7 is-paddingless has-text-right">
+            <span class="pre_navbar_item_api navbar_desktop" data-tippy=" <b>Horario de Atención </b><br>  Lunes a Viernes <br> 9:30am a 7:00pm TC" data-tippy-arrow="true"><i class="fas fa-phone"></i>01800 788 5783</span>
+          </div>
+          <div class="column is-1 is-paddingless has-text-centered">
+            <a href="/soporte" class="contacto_hover">
+              <p class="pre_navbar_item_api navbar_desktop">Soporte</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="columns" id="menu_api">
+          <div class="column">
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                  <img src="img/logo_docdigitales_color.png" alt="logo docDigitales blanco" id="imagen_logo">
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span class="span_gris" aria-hidden="true"></span>
+                  <span class="span_gris" aria-hidden="true"></span>
+                  <span class="span_gris" aria-hidden="true"></span>
+                </a>
+
+              </div>
+
+              <div id="navbarBasicExample" class="navbar-menu">
+
+                <div class="navbar-end">
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link item_menu_gris hover_menu_mobile item_menu_gris_hover">
+                      Cómo Funciona
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed" id="drop_funciona">
+                      <a class="navbar-item hover_menu_mobile hover_menu_mobile drop_item" href="/facturacion-en-linea">
+                        Facturación en Línea
+                      </a>
+                      <a class="navbar-item hover_menu_mobile drop_item" href="/api">
+                        API
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link item_menu_gris hover_menu_mobile" id="como_compania">
+                      Compañía
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed" id="drop_compania">
+                      <a class="navbar-item hover_menu_mobile drop_item" href="/sobre-nosotros">
+                        Sobre Nosotros
+                      </a>
+                      <a class="navbar-item hover_menu_mobile drop_item" href="https://blog.docdigitales.com/">
+                        Blog
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <a class="navbar-item item_menu_gris hover_menu_mobile" href="/planes">
+                    Planes
+                  </a>
+
+
+                  <div class="navbar-item has-text-right">
+                    <div class="buttons">
+                      <a class="button boton_prueba_menu_api" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">
+                        <strong>Prueba Gratis</strong>
+                      </a>
+                      <a class="button boton_iniciar_menu_contacto" href="https://sistema.docdigitales.com/" target="_blank">
+                        Iniciar Sesión
+                      </a>
+                    </div>
+                    <hr class="navbar-divider navbar_mobile">
+                    <a class="hover_menu_mobile hover_menu_mobile navbar-item navbar_mobile"><i class="fas fa-phone"></i>01800 788 5783</a>
+                    <a class="navbar-item navbar_mobile hover_menu_mobile" href="/soporte">Contacto</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="padding_seccion_contacto_api">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="columns">
+            <div class="column">
+              <h1 id="padding_contacto_titulo" class="titulo_gris_facturacion">Contacta Soporte</h1>
+
+              <div class="columns form_contacto">
+                <div class="column is-one-third">
+                  <form action="" method="post" data-remote="true" id="forma_contacto">
+                    <input type="text" name="app" value="sistema" class="input_invisible">
+                    <div class="columns">
+                      <div class="column">
+                        <p>Nombre</p>
+                        <input type="text" name="nombre" value="" class="input_gris">
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <p>Correo Electrónico</p>
+                        <input type="text" name="correo" value="" class="input_gris">
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <p>Teléfono</p>
+                        <input type="text" name="telefono" value="" class="input_gris">
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <p>Motivo de Contacto</p>
+                        <textarea rows="10" cols="30" name="mensaje" class="input_gris" placeholder="Escribe tu pregunta aquí"></textarea>
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <button class="button boton_iniciar_menu_contacto" type="submit">Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+            <div class="column" id="padding_contacto_horario">
+              <p>Horario de Atención</p>
+              <p> <i class="far fa-clock"></i>Lunes a Viernes
+                9:30am a 7:00pm TC</p>
+              <p><i class="fas fa-envelope-open-text"></i>contacto@docdigitales.com</p>
+              <p><i class="fas fa-phone"></i>01800 788 5783</p>
+              <br> <br>
+              <section>
+                <p><b>¿No tienes docDigitales?</b></p>
+                <p>¡Cámbiate al sistema de facturación en línea más amigable y con las mejores funciones! Regístrate haz la prueba gratis</p> <br>
+                <a class="button boton_rojo" id="margin_boton_primera" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">Prueba docDigitales Gratis</a><br>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="columns" id="padding_tabs_soporte">
+        <div class="column is-10 is-offset-1">
+
+          <div class="tabs is-centered is-boxed">
+            <ul>
+              <li class="is-active" id="seleccion_requisitos">
+                <a>
+                  <span>Requisitos</span>
+                </a>
+              </li>
+              <li id="seleccion_faq">
+                <a>
+                  <span>Preguntas Frecuentes</span>
+                </a>
+              </li>
+              <li id="seleccion_sat">
+                <a>
+                  <span>SAT</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- REQUISITOS -->
+          <section id="seccion_requisitos" class="is_active">
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">Obtener su e.firma (antes FIEL)</h3>
+                <p class="texto_contenido_gris">Debe acudir al SAT para realizar este trámite. Puede consultar los requisitos para el trámite en el <a href="http://www.sat.gob.mx/informacion_fiscal/tramites/fiel/Paginas/default.aspx" target="_blank">portal
+                    del SAT.</a></p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">Contar con el Certificado de Sellos</h3>
+                <p class="texto_contenido_gris">Garantiza la identidad del emisor del CFDI, se tramita por internet con su e.firma
+                  Una vez que se registre en el sistema puede comunicarse con nosotros y le apoyamos a realizar este trámite.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- FAQ -->
+          <section id="seccion_preguntas" class="no_active">
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cuáles son los requisitos de la facturación electrónica en México?</h3>
+                <p class="texto_contenido_gris">– Estar inscrito en el Registro Federal de Contribuyentes (RFC) <br>
+                  – Contar con su e.firma antes Firma Electrónica (FIEL) <br>
+                  – Tramitar su Certificado de Sello Digital</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cuál es la diferencia entre el Certificado de la e.firma y el Certificado de Sello Digital?</h3>
+                <p class="texto_contenido_gris">– El Certificado de la e.firma es el que se obtiene cuando realiza el trámite de la e.firma en el SAT y es el que identifica a la persona física o moral para sus trámites ante el SAT. <br>
+                  – El Certificado de Sello Digital es un requisito indispensable para la facturación electrónica este nos sirve para facturar fuera del SAT en un sistema de facturación electrónica sirve para identificar al emisor del comprobante en
+                  cada factura electrónica generada.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cómo tramito mi e.firma (antes FIEL)?</h3>
+                <p class="texto_contenido_gris">La e.firma ampara la identidad de la empresa o persona física al realizar trámites por internet en el SAT y se obtiene presencialmente en la Administración Local del SAT mediante previa cita. En la
+                  siguiente <a href="http://www.sat.gob.mx/informacion_fiscal/tramites/fiel/Paginas/default.aspx" target="_blank">liga</a> encontrará los requisitos que pide el SAT para este trámite.</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cómo tramito mi Certificado de Sello Digital?</h3>
+                <p class="texto_contenido_gris">Se tramita por internet dentro del portal del SAT debe contar con la e.firma para poder hacer el trámite. En la siguiente liga le proporcionamos un manual para que sepa los pasos a seguir Ir a <a href="https://blog.docdigitales.com/"
+                    target="_blank">Centro de Ayuda</a> para que lo realice usted mismo.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Ustedes pueden tramitarme la e.firma?</h3>
+                <p class="texto_contenido_gris">Nosotros no podemos tramitar la e.firma ya que es un trámite personal, en el cual el representante legal o persona física debe acudir al SAT personalmente.</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Ustedes pueden tramitarme el Certificado de Sello Digital?</h3>
+                <p class="texto_contenido_gris">Con gusto podemos tramitar su Certificado de Sello Digital, ya que este trámite es a través de internet. Para hacerlo es necesario que se encuentre registrado en nuestro sistema y deberá ponerse en
+                  contacto con nosotros al 01800 788 5783. En caso de que prefiera tramitarlo usted mismo, ofrecemos videos y manuales acerca de cómo realizar este trámite. <a href="https://blog.docdigitales.com/" target="_blank">Ir a Centro de
+                    Ayuda.</a>
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Qué puedo hacer con docDigitales?</h3>
+                <p class="texto_contenido_gris">Con el sistema docDigitales, usted puede realizar: <br>
+                  – Facturas o CFDI de Ingresos <br>
+                  – Facturas o CFDI de Ingresos por Honorarios <br>
+                  – Notas de crédito o de cargo por Egresos <br>
+                  – Carta porte de Traslados <br>
+                  – CFDI de Nómina <br>
+                  – CFDI de Recepción de Pagos <br>
+                  – Cotizaciones <br>
+                  – Control de Gastos
+                </p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cuáles son las formas en las que puedo realizar el pago del servicio de docDigitales?</h3>
+                <p class="texto_contenido_gris"> Para su comodidad, contamos con varias formas de pago: <br>
+                  – Tarjeta de Crédito o Débito <br>
+                  – PayPal <br>
+                  – Transferencia electrónica <br>
+                  – Depósito en ventanilla bancaria. Para realizar el pago con Tarjeta y PayPal deberá ingresar al sistema en el menú de Inicio - Planes. La información de nuestra cuenta bancaria para depósito y transferencia los encuentra en el
+                  mismo menú.
+
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cuál es el beneficio de pagar mi plan de manera anual?</h3>
+                <p class="texto_contenido_gris">Si realiza el pago de su plan de forma anual, le regalamos un mes de facturación electrónica gratis, es decir, paga sólo 11 meses.</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Si contrato ahora, en cuanto tiempo obtengo el servicio?</h3>
+                <p class="texto_contenido_gris">– Si realiza el pago por tarjeta, el pago se aplica inmediatamente. <br>
+                  – Si realiza el pago por medio de transferencia o depósito en ventanilla, se activa en un lapso no mayor a 10 minutos, el pago debe venir referenciado con su RFC para poder identificarlo.
+
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cuántas veces puedo imprimir una factura electrónica?</h3>
+                <p class="texto_contenido_gris">Las facturas electrónicas pueden imprimirse, enviarse y descargarse las veces que usted desee sin ningún costo adicional.</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cómo cancelo una factura electrónica?</h3>
+                <p class="texto_contenido_gris">Si quiere cancelar una factura, solo tiene que dirigirse al menú de Facturación electrónica y seleccionar la factura que desea cancelar y dar clic en el botón “Cancelar Factura”. Una vez que se cancele
+                  en el sistema, también se cancelará automáticamente ante el SAT. Las cancelaciones no le generan consumo de timbrado adicional, sólo se consume el timbre de la factura generada.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Cuánto tiempo se almacena mi facturación electrónica en el sistema?</h3>
+                <p class="texto_contenido_gris">Sus facturas se conservarán almacenadas por todo el tiempo que sea nuestro cliente y hasta un año después si dejara de serlo.</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Puedo recibir las facturas que me emitan mis proveedores en el sistema de docDigitales?
+                </h3>
+                <p class="texto_contenido_gris">Claro que sí, sólo tiene que dar de alta en Mi cuenta - Recepción de Facturas un correo electrónico con dominio @docdigitales.com y dárselo a sus proveedores de esta manera las recibirá en el menú
+                  Facturación electrónica - Recibidas. También con el Plan Empresarial Premium, puede recibir automáticamente las facturas de sus proveedores ya que docDigitales se sincroniza con el SAT para descargar sus facturas en el sistema. Es
+                  necesario contar con su clave CIEC.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Las Facturas se pueden verificar ante el SAT desde el sistema docDigitales?</h3>
+                <p class="texto_contenido_gris">Claro que sí, sólo seleccione la factura que desee validar en Facturas Emitidas o Facturas Recibidas y haga clic en el botón “Validar SAT”, esto le dará información detallada de sus CFDI timbrados ante
+                  el SAT. <a href="https://www.docdigitales.com/preguntas-frecuentes/" target="_blank">ver más información</a>. Nota: no todos los planes incluyen esta función.</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Puedo ingresar un logo para mis facturas?
+                </h3>
+                <p class="texto_contenido_gris">Solamente es cuestión de ingresar en Configuración - Logo y subir su logo este tiene que tener una medida de 200×200 pixeles y 500 kb o menos.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Puedo hacer nóminas en docDigitales?</h3>
+                <p class="texto_contenido_gris">Si, todos nuestros planes incluyen el módulo de Nómina, sólo ingrese al sistema en el menú Nómina y comience a dar de alta a sus Staff, las nóminas son CFDI, es decir que cuando realiza una nómina se
+                  consume un timbre, si requiere más información para realizar sus nóminas consulte en nuestro <a href="https://blog.docdigitales.com/2016/09/22/553/" target="_blank">Centro de Ayuda</a>.</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Las Nóminas se pueden verificar ante el SAT en docDigitales?
+                </h3>
+                <p class="texto_contenido_gris">Claro que sí, solo es necesario realizar la nómina, seleccionarla y dar clic en el botón “Validar SAT” Esto le dará información detallada de sus CFDI de nómina timbrados ante el SAT. <a href="https://blog.docdigitales.com/2016/09/22/553/"
+                    target="_blank">ver más información</a>. Nota: no todos los planes incluyen esta función.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Puedo sacar reportes de mi facturación electrónica?
+
+                </h3>
+                <p class="texto_contenido_gris">Así es, en el menú de Reportes, usted puede obtener sus movimientos y registros en docDigitales en pantalla o exportarlos a Excel, contamos con: <br>
+                  – Reportes de Ventas <br>
+                  – Reportes de Facturas <br>
+                  – Reportes Financieros</p>
+              </div>
+              <div class="column is-5">
+                <h3 class="titulo_gris_facturacion">¿Dónde puedo encontrar más información?
+
+
+                </h3>
+                <p class="texto_contenido_gris">Puede enviarnos sus dudas al correo contacto@docdigitales.com, también estamos disponibles en nuestro teléfono lada sin costo 01800 788 5783. Nuestro horario de atención a clientes es de Lunes a
+                  Viernes de 7:30 am a 5:00 pm Horario del Pacífico. / 9:30 am a 7:00 pm Horario del Centro.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- SAT -->
+          <section id="seccion_sat" class="no_active">
+            <h3 class="titulo_gris_facturacion">Páginas de internet del SAT más utilizadas</h3>
+            <div class="columns">
+              <div class="column is-5">
+                <a href="https://portalcfdi.facturaelectronica.sat.gob.mx/" target="_blank">
+                  <h3 class="titulo_gris_facturacion">Servicio del SAT para consultar y cancelar facturas electrónicas emitidas:</h3>
+                </a>
+                <p class="texto_contenido_gris">
+                  Accede a este servicio identificándote con tu clave CIEC (otorgada por el SAT) y escribe el UUID o Folio Fiscal de la factura.
+                </p>
+              </div>
+              <div class="column is-5">
+                <a href="https://www.consulta.sat.gob.mx/sicofi_web/moduloECFD_plus/ValidadorCFDI/Validador%20cfdi.html" target="_blank">
+                  <h3 class="titulo_gris_facturacion">Validador de forma y sintaxis de CFDI</h3>
+                </a>
+                <p class="texto_contenido_gris">Para verificar la estructura, el sello y cadena original de la factura electrónica deberá primero cargar tu archivo XML generado el sistema. El segundo paso consiste en cargar el certificado del timbre
+                  que utilizó el SAT para sellar su factura electrónica.
+                </p>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column is-5">
+                <a href="https://portalsat.plataforma.sat.gob.mx/certifica/" target="_blank">
+                  <h3 class="titulo_gris_facturacion">Descarga de aplicación Certifica para la Generación de Certificado de Sello Digital</h3>
+                </a>
+
+              </div>
+              <div class="column is-5">
+                <a href="https://portalsat.plataforma.sat.gob.mx/RecuperacionDeCertificados/" target="_blank">
+                  <h3 class="titulo_gris_facturacion">Sistema de recuperación de certificados
+
+                  </h3>
+                </a>
+                <p class="texto_contenido_gris"> Para descargar su archivo .cer del CSD y de la e.firma, puede hacerlo en este portal, también puede conocer la vigencia de sus certificados.
+                </p>
+              </div>
+            </div>
+          </section>
+    </section>
+    <section class="footer_fondo">
+      <div class="columns">
+        <div class="column is-offset-1 is-10">
+          <div class="columns">
+            <div class="column">
+              <h5>Secciones</h5>
+              <ul>
+                <li><a href="/facturacion-en-linea">Facturación en Línea</a></li>
+                <li><a href="/api">API</a></li>
+                <li> <a href="https://blog.docdigitales.com/">Blog</a></li>
+                <li> <a href="/planes">Planes</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/registro/sistema">Registro</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/login">Inicio Sesión</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Ayuda</h5>
+              <ul>
+                <li><a href="https://blog.docdigitales.com/centro-ayuda/">Centro de Ayuda</a></li>
+                <li><a href="/soporte#seccion_preguntas">Preguntas Frecuentes</a></li>
+                <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+                <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+                <li><a href="/acuerdo-de-niveles">Acuerdo de Niveles de Servicio</a></li>
+                <li><a href="/politica-de-privacidad-app">Política de Privacidad App Móvil</a></li>
+                <li><a href="/soporte">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Enlaces SAT</h5>
+              <ul>
+                <li><a href="https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas%20" target="_blank">Trámite de Certificado de Sello Digital</a></li>
+                <li><a href="https://www.sat.gob.mx/aplicacion/80523/verifica-tus-facturas-electronicas%20%20" target="_blank">Verifica tus Facturas</a></li>
+                <li><a href="https://www.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20)" target="_blank">Formato de Factura(Anexo 20)</a></li>
+                <ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column  is-10 is-offset-1">
+          <div class="columns">
+            <div class="column is-offset-8">
+              <a href="https://www.sat.gob.mx/home" target="_blank"> <img src="img/sat-logo.png" alt=" logo sat" width="50%"></a>
+            </div>
+            <div class="column">
+              <a href="https://www.timbox.com.mx/" target="_blank"> <img src="img/timbox_logo.png" alt="logo de Timbox" width="50%"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_secudario">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns">
+            <div class="column">
+              <h6>Facturación en Línea docDigitales México</h6>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="columns iconos_sociales">
+                <div class="column">
+                  <a href="https://www.facebook.com/DocDigitales/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://mx.linkedin.com/company/documentos-digitales-de-mexico" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://github.com/docdigitales" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <!-- Start of LiveChat (www.livechatinc.com) code -->
+  <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 8120781;
+    (function() {
+      var lc = document.createElement('script');
+      lc.type = 'text/javascript';
+      lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+  <noscript>
+    <a href="https://www.livechatinc.com/chat-with/8120781/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
+  <!-- End of LiveChat code -->
+</body>
+
+</html>

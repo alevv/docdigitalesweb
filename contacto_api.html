@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>docDigitales Soporte API | Facturación en Línea</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description" content="El sistema de facturación en línea más fácil de usar en México. Ideal para PyMes, empresas de servicios y freelancers. Prueba gratis 30 días.">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-22599809-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-22599809-3');
+  </script>
+
+
+</head>
+
+<body>
+  <div class="estilo_texto" id="fondo_contacto_api">
+
+    <section class="columns">
+      <div class="column is-10 is-offset-1">
+
+        <!-- PRE NAVBAR -->
+        <div class="columns pre_navbar is-vcentered">
+          <div class="column is-offset-7 is-paddingless has-text-right">
+            <span class="pre_navbar_item_api navbar_desktop" data-tippy=" <b>Horario de Atención </b><br>  Lunes a Viernes <br> 9:30am a 7:00pm TC" data-tippy-arrow="true"><i class="fas fa-phone"></i>01800 788 5783</span>
+          </div>
+          <div class="column is-1 is-paddingless has-text-centered">
+            <a href="/soporte" class="contacto_hover">
+              <p class="pre_navbar_item_api navbar_desktop">Soporte</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="columns" id="menu_api">
+          <div class="column">
+            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                  <img src="img/logo_docdigitales_color.png" alt="logo docDigitales blanco" id="imagen_logo">
+                </a>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span class="span_gris" aria-hidden="true"></span>
+                  <span class="span_gris" aria-hidden="true"></span>
+                  <span class="span_gris" aria-hidden="true"></span>
+                </a>
+
+              </div>
+
+              <div id="navbarBasicExample" class="navbar-menu">
+
+                <div class="navbar-end">
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link item_menu_gris hover_menu_mobile item_menu_gris_hover">
+                      Cómo Funciona
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed" id="drop_funciona">
+                      <a class="navbar-item hover_menu_mobile hover_menu_mobile drop_item" href="/facturacion-en-linea">
+                        Facturación en Línea
+                      </a>
+                      <a class="navbar-item hover_menu_mobile drop_item" href="/api">
+                        API
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link item_menu_gris hover_menu_mobile" id="como_compania">
+                      Compañía
+                    </a>
+
+                    <div class="navbar-dropdown is-boxed" id="drop_compania">
+                      <a class="navbar-item hover_menu_mobile drop_item" href="/sobre-nosotros">
+                        Sobre Nosotros
+                      </a>
+                      <a class="navbar-item hover_menu_mobile drop_item" href="https://blog.docdigitales.com/">
+                        Blog
+                      </a>
+
+                    </div>
+                  </div>
+
+                  <a class="navbar-item item_menu_gris hover_menu_mobile" href="/planes">
+                    Planes
+                  </a>
+
+
+                  <div class="navbar-item has-text-right">
+                    <div class="buttons">
+                      <a class="button boton_prueba_menu_api" href="https://sistema.docdigitales.com/account/registro/sistema" target="_blank">
+                        <strong>Prueba Gratis</strong>
+                      </a>
+                      <a class="button boton_iniciar_menu_contacto" href="https://sistema.docdigitales.com/" target="_blank">
+                        Iniciar Sesión
+                      </a>
+                    </div>
+                    <hr class="navbar-divider navbar_mobile">
+                    <a class="hover_menu_mobile hover_menu_mobile navbar-item navbar_mobile"><i class="fas fa-phone"></i>01800 788 5783</a>
+                    <a class="navbar-item navbar_mobile hover_menu_mobile" href="/soporte">Contacto</a>
+                    <hr class="navbar-divider navbar_mobile">
+                    <a class="hover_menu_mobile hover_menu_mobile navbar-item navbar_mobile" href="/api">API</a>
+                    <a class="navbar-item navbar_mobile hover_menu_mobile" href="https://developer.docdigitales.com/integracion" target="_blank">Documentación</a>
+                    <a class="navbar-item navbar_mobile hover_menu_mobile" href="/soporte-api">Contacto API</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+        </div>
+        <hr id="linea_api" class="navbar_desktop">
+
+        <div class="columns navbar_desktop" id="segundo_menu">
+          <div class="column is-offset-7 has-text-right">
+            <a href="/api" class="contacto_menu">API</a>
+            <a href="https://developer.docdigitales.com/integracion" class="contacto_menu" target="_blank">Documentación</a>
+            <a href="/soporte-api" class="contacto_menu item_menu_gris_hover">Contacto API</a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="padding_seccion_contacto_api">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="columns">
+            <div class="column">
+              <h1 id="padding_contacto_titulo" class="titulo_gris_facturacion">Contáctanos, Soporte <span id="red_text">API</span></h1>
+
+              <div class="columns form_contacto">
+                <div class="column is-one-third">
+                  <form action="" method="post" data-remote="true" id="forma_api">
+                    <input type="text" name="app" value="api" class="input_invisible">
+                    <div class="columns">
+                      <div class="column">
+                        <p>Nombre</p>
+                        <input type="text" name="nombre" value="" class="input_gris">
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <p>Correo Electrónico</p>
+                        <input type="text" name="correo" value="" class="input_gris">
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <p>Teléfono</p>
+                        <input type="text" name="telefono" value="" class="input_gris">
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <p>Motivo de Contacto</p>
+                        <textarea name="mensaje" rows="10" cols="30" class="input_gris" placeholder="Escribe tu pregunta aquí"></textarea>
+                      </div>
+                    </div>
+                    <div class="columns">
+                      <div class="column">
+                        <button class="button boton_iniciar_menu_contacto" type="submit">Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+            <div class="column" id="padding_contacto_horario">
+              <p>Horario de Atención</p>
+              <p> <i class="far fa-clock"></i>Lunes a Viernes
+                9:30am a 7:00pm TC</p>
+              <p><i class="fas fa-envelope-open-text"></i>soporte.api@docdigitales.com</p>
+              <p><i class="fas fa-phone"></i>01800 788 5783</p>
+              <br> <br>
+              <section>
+                <p><b>Simplificamos la facturación</b></p>
+                <p>Obtén tu demo gratis y descubre los grandes beneficios de integrar y conectar tu sistema a docDigitales API.</p>
+                <a class="button boton_rojo" id="margin_boton_primera" href="https://developer.docdigitales.com/usuarios/sign_up" target="_blank">¡Obtén tu demo gratis!</a><br>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer_fondo">
+      <div class="columns">
+        <div class="column is-offset-1 is-10">
+          <div class="columns">
+            <div class="column">
+              <h5>Secciones</h5>
+              <ul>
+                <li><a href="/facturacion-en-linea">Facturación en Línea</a></li>
+                <li><a href="/api">API</a></li>
+                <li> <a href="https://blog.docdigitales.com/">Blog</a></li>
+                <li> <a href="/planes">Planes</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/registro/sistema">Registro</a></li>
+                <li> <a href="https://sistema.docdigitales.com/account/login">Inicio Sesión</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Ayuda</h5>
+              <ul>
+                <li><a href="https://blog.docdigitales.com/centro-ayuda/">Centro de Ayuda</a></li>
+                <li><a href="/soporte#seccion_preguntas">Preguntas Frecuentes</a></li>
+                <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+                <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+                <li><a href="/acuerdo-de-niveles">Acuerdo de Niveles de Servicio</a></li>
+                <li><a href="/politica-de-privacidad-app">Política de Privacidad App Móvil</a></li>
+                <li><a href="/soporte">Contacto</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h5>Enlaces SAT</h5>
+              <ul>
+                <li><a href="https://www.sat.gob.mx/tramites/17507/envia-la-solicitud-para-tu-certificado-de-sello-digital-para-emitir-facturas-electronicas%20" target="_blank">Trámite de Certificado de Sello Digital</a></li>
+                <li><a href="https://www.sat.gob.mx/aplicacion/80523/verifica-tus-facturas-electronicas%20%20" target="_blank">Verifica tus Facturas</a></li>
+                <li><a href="https://www.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20)" target="_blank">Formato de Factura(Anexo 20)</a></li>
+                <ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column  is-10 is-offset-1">
+          <div class="columns">
+            <div class="column is-offset-8">
+              <a href="https://www.sat.gob.mx/home" target="_blank"> <img src="img/sat-logo.png" alt=" logo sat" width="50%"></a>
+            </div>
+            <div class="column">
+              <a href="https://www.timbox.com.mx/" target="_blank"> <img src="img/timbox_logo.png" alt="logo de Timbox" width="50%"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_secudario">
+      <div class="columns">
+        <div class="column is-10 is-offset-1">
+          <div class="columns">
+            <div class="column">
+              <h6>Facturación en Línea docDigitales México</h6>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="columns iconos_sociales">
+                <div class="column">
+                  <a href="https://www.facebook.com/DocDigitales/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://mx.linkedin.com/company/documentos-digitales-de-mexico" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="column">
+                  <a href="https://github.com/docdigitales" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.2/lottie.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+  <!-- Start of LiveChat (www.livechatinc.com) code -->
+  <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 8120781;
+    (function() {
+      var lc = document.createElement('script');
+      lc.type = 'text/javascript';
+      lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(lc, s);
+    })();
+  </script>
+  <noscript>
+    <a href="https://www.livechatinc.com/chat-with/8120781/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+  </noscript>
+  <!-- End of LiveChat code -->
+</body>
+
+</html>
